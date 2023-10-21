@@ -25,8 +25,7 @@ namespace AGL.Player
             public float xSensitivity => x / 100.0f;
             public float ySensitivity => y / 100.0f;
         }
-
-        [SerializeField] private Camera m_camera;
+        
         [Tooltip("The reference to the Input Action that will control the camera rotation")]
         [SerializeField] private InputActionReference m_lookInputAction;
         
@@ -42,7 +41,7 @@ namespace AGL.Player
         public Vector3 LookDirection => (targetLookPosition - transform.position).normalized;
 
         private Vector3 targetLookPosition => new(m_target.position.x, transform.position.y, m_target.position.z);
-            
+        private bool isValidInputAction => m_lookInputAction.action.expectedControlType.Contains("Vector2");
         
         private CinemachineVirtualCameraBase m_cinemachine;
         private Transform m_target;
@@ -58,7 +57,7 @@ namespace AGL.Player
         {
             if (m_lookInputAction == null) return;
             
-            if (!m_lookInputAction.action.expectedControlType.Contains("Vector2"))
+            if (!isValidInputAction)
             {
                 Debug.LogError($"The InputAction must have a controlType of 'Vector2'");
             }
@@ -74,6 +73,8 @@ namespace AGL.Player
 
             m_cinemachine = GetComponent<CinemachineVirtualCameraBase>();
             m_target = m_cinemachine.LookAt;
+            
+            Debug.Assert(isValidInputAction, "The InputAction must have a controlType of 'Vector2'");
         }
 
         private void Update()
