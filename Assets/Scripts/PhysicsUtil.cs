@@ -10,7 +10,7 @@ namespace DefaultNamespace
         // Calculates a random point on the ground, within some range of a transform.
         public static RaycastHit GetRandomPointOnGroundNear(Vector3 down, Vector3 point, float radius)
         {
-            Vector2 randomOffset2d = Random.insideUnitCircle * (radius * 2);
+            Vector2 randomOffset2d = Random.insideUnitCircle * radius;
             Vector3 randomOffset = new Vector3(randomOffset2d.x, randomOffset2d.y, 0);
             randomOffset = Quaternion.LookRotation(-down) * randomOffset;
             Vector3 unsnappedRandomPosition = point + randomOffset;
