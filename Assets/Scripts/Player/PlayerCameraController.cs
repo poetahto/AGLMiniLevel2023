@@ -7,7 +7,13 @@ using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 namespace AGL.Player
-{
+{ 
+    /// <summary>
+    /// Provides controls for the third person camera. This MonoBehaviour
+    /// implements the <c>AxisState.IInputAxisProvider</c> interface which allows it
+    /// to override the inputs for the <c>Cinemachine</c> cameras. This script
+    /// also performs dampening on the input values to get a smoother rotation.
+    /// </summary>
     public class PlayerCameraController : MonoBehaviour, AxisState.IInputAxisProvider
     {
         [Serializable]
@@ -20,23 +26,90 @@ namespace AGL.Player
             public float ySensitivity => y / 100.0f;
         }
         
+        [Tooltip("The reference to the Input Action that will control the camera rotation")]
         [SerializeField] private InputActionReference m_lookInputAction;
-        [Space] 
+        
+        [Header("Preferences")]
+        [Tooltip("The time it will take for the smoothing function to reach the target value")]
+        [SerializeField] private float m_rotationSmoothTime;
+        [Tooltip("The mouse sensitivity divided by axis")]
         [SerializeField] private Sensitivity m_sensitivity;
+
+        private InputAction m_action;
+        
+        private float m_smoothPitch;
+        private float m_pitchSmoothVelocity;
+        
+        private float m_smoothYaw;
+        private float m_yawSmoothVelocity;
+
+        private void OnValidate()
+        {
+            if (m_lookInputAction == null) return;
+            
+            if (!m_lookInputAction.action.expectedControlType.Contains("Vector2"))
+            {
+                Debug.LogError($"The InputAction must have a controlType of 'Vector2'");
+            }
+        }
+
+        private void Awake()
+        {
+            m_action = m_lookInputAction.action;
+            m_action.Enable();
+            
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
 
         public float GetAxisValue(int axis)
         {
             if (!enabled) return 0.0f;
-            if (m_lookInputAction == null) return 0.0f;
 
-            m_lookInputAction.action.Enable();
+            var value = m_action.ReadValue<Vector2>().normalized;
             
             return axis switch
             {
-                0 => m_lookInputAction.action.ReadValue<Vector2>().x * m_sensitivity.xSensitivity,
-                1 => m_lookInputAction.action.ReadValue<Vector2>().y * m_sensitivity.ySensitivity,
+                0 => GetYaw(value.x),
+                1 => GetPitch(value.y),
                 _ => 0.0f
             };
+        }
+
+        /// <summary>
+        /// Smooths the pitch values
+        /// </summary>
+        /// <param name="y">axis input from the mouse</param>
+        /// <returns>The target pitch value</returns>
+        private float GetPitch(float y)
+        {
+            var target = y * m_sensitivity.ySensitivity;
+            
+            m_smoothPitch = Mathf.SmoothDampAngle(
+                m_smoothPitch,
+                target,
+                ref m_pitchSmoothVelocity,
+                m_rotationSmoothTime);
+
+            return m_smoothPitch;
+        }
+
+        /// <summary>
+        /// Smooths the yaw values
+        /// </summary>
+        /// <param name="x">axis input from the mouse</param>
+        /// <returns>The target yaw value</returns>
+        private float GetYaw(float x)
+        {
+            var target = x * m_sensitivity.xSensitivity;
+            
+            m_smoothYaw = Mathf.SmoothDampAngle(
+                m_smoothYaw,
+                target,
+                ref m_yawSmoothVelocity,
+                m_rotationSmoothTime);
+
+            return m_smoothYaw;
         }
     }
 }
