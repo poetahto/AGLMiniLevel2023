@@ -25,7 +25,8 @@ namespace AGL.Player
             public float xSensitivity => x / 100.0f;
             public float ySensitivity => y / 100.0f;
         }
-        
+
+        [SerializeField] private Camera m_camera;
         [Tooltip("The reference to the Input Action that will control the camera rotation")]
         [SerializeField] private InputActionReference m_lookInputAction;
         
@@ -35,6 +36,16 @@ namespace AGL.Player
         [Tooltip("The mouse sensitivity divided by axis")]
         [SerializeField] private Sensitivity m_sensitivity;
 
+        /// <summary>
+        /// Returns the normalized forward direction of the camera without regard for its local rotation
+        /// </summary>
+        public Vector3 LookDirection => (targetLookPosition - transform.position).normalized;
+
+        private Vector3 targetLookPosition => new(m_target.position.x, transform.position.y, m_target.position.z);
+            
+        
+        private CinemachineVirtualCameraBase m_cinemachine;
+        private Transform m_target;
         private InputAction m_action;
         
         private float m_smoothPitch;
@@ -60,6 +71,14 @@ namespace AGL.Player
             
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+
+            m_cinemachine = GetComponent<CinemachineVirtualCameraBase>();
+            m_target = m_cinemachine.LookAt;
+        }
+
+        private void Update()
+        {
+            Debug.DrawLine(transform.position, targetLookPosition, Color.green);
         }
 
         public float GetAxisValue(int axis)
@@ -110,6 +129,15 @@ namespace AGL.Player
                 m_rotationSmoothTime);
 
             return m_smoothYaw;
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (m_target != null)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawLine(m_target.position, m_target.up * 10f);
+            }
         }
     }
 }
