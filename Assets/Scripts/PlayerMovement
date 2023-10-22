@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    public double moveSpeed;
+    public RigidBody rb;
+    public double jumpForce;
+    
+    void Start ()
+    {
+        rb = GetComponent<RigidBody>();
+    }
+
+    void Update()
+    {
+        // left, right, up, down movements(x and z axis)
+        rb.velocity = new Vector3(Input.getAxis("Horizontal") * moveSpeed, rb.velocity.y,
+            Input.getAxis("Vertical") * moveSpeed);
+        // jump movement
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+        }    
+    }
+}
