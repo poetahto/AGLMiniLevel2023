@@ -21,7 +21,7 @@ namespace DefaultNamespace
         public static RaycastHit SnapToGround(Vector3 down, Vector3 point)
         {
             Ray ray = new Ray(point, down);
-            int hits = Physics.RaycastNonAlloc(ray, _hits);
+            int hits = Physics.RaycastNonAlloc(ray, _hits, float.PositiveInfinity);
 
             if (hits == 0)
                 return default;

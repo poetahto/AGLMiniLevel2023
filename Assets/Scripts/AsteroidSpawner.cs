@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.Pool;
+using UnityEngine.Serialization;
 using UnityEngine.Splines;
 using Random = UnityEngine.Random;
 
@@ -11,7 +13,10 @@ namespace DefaultNamespace
         private float spawnRate = 10.0f;
 
         [SerializeField]
-        private GameObject asteroidPrefab;
+        private Asteroid asteroidPrefab;
+
+        [FormerlySerializedAs("moverPrefab")] [SerializeField]
+        private AsteroidPath pathPrefab;
 
         [SerializeField]
         private Transform[] targetPositions;
@@ -29,6 +34,8 @@ namespace DefaultNamespace
 
         private GameState _gameState;
         private float _timeSinceSpawn;
+        private ObjectPool<AsteroidPath> _pathPool;
+        private ObjectPool<Asteroid> _asteroidPool;
 
         private void OnValidate()
         {
@@ -38,16 +45,22 @@ namespace DefaultNamespace
         private void Start()
         {
             _gameState = FindAnyObjectByType<GameState>();
-            strikingVisualizer.localScale = new Vector3(strikingRange, strikingRange, strikingRange);
-        }
 
-        private void OnGUI()
-        {
-            if (_gameState.TryGetPlayer(out GameObject playerInstance))
+            var pathPoolParent = new GameObject("Path Pool");
+            _pathPool = new ObjectPool<AsteroidPath>(() =>
             {
-                if (GUILayout.Button("Spawn Asteroid"))
-                    SpawnAsteroid(playerInstance.transform);
-            }
+                AsteroidPath instance = Instantiate(pathPrefab, pathPoolParent.transform);
+                instance.OnLifetimeEnd += () => _pathPool.Release(instance);
+                return instance;
+            });
+
+            var asteroidPoolParent = new GameObject("Asteroid Pool");
+            _asteroidPool = new ObjectPool<Asteroid>(() =>
+            {
+                Asteroid instance = Instantiate(asteroidPrefab, asteroidPoolParent.transform);
+                instance.OnLifetimeEnd += () => _asteroidPool.Release(instance);
+                return instance;
+            });
         }
 
         private void Update()
@@ -77,52 +90,24 @@ namespace DefaultNamespace
         {
             Debug.Log("Spawned an asteroid.");
 
-            Transform randomTarget = GetRandomTargetTransform();
-            GameObject asteroidMover = new GameObject("Asteroid Movement Spline");
-            var splineContainer = asteroidMover.AddComponent<SplineContainer>();
-            Spline spline = splineContainer.Spline;
+            // Get a random target (the points around the planet)
+            int randomIndex = Random.Range(0, targetPositions.Length);
+            Transform randomTarget = targetPositions[randomIndex];
+
+            // Create the mover that drives asteroid paths
+            AsteroidPath asteroidPath = _pathPool.Get();
+            asteroidPath.Spline.Clear();
+            Spline spline = asteroidPath.Spline;
             spline.Add(new BezierKnot(transform.position), TangentMode.AutoSmooth, 1);
             spline.Add(new BezierKnot(randomTarget.position), TangentMode.AutoSmooth, 1);
-            AddLandingKnotsAtPlayer(spline, playerTransform);
+            asteroidPath.Initialize(playerTransform, strikingRange, impactTime + 1);
 
-            GameObject asteroidInstance = Instantiate(asteroidPrefab, asteroidMover.transform);
-            var splineAnimate = asteroidInstance.AddComponent<SplineAnimate>();
-            splineAnimate.Container = splineContainer;
-            splineAnimate.Duration = impactTime;
-            splineAnimate.Easing = SplineAnimate.EasingMode.EaseIn;
-            splineAnimate.Play();
-        }
-
-        private Transform GetRandomTargetTransform()
-        {
-            int randomIndex = Random.Range(0, targetPositions.Length);
-            return targetPositions[randomIndex];
-        }
-
-        private void AddLandingKnotsAtPlayer(Spline spline, Transform playerTransform)
-        {
-            RaycastHit spawnPos = PhysicsUtil.GetRandomPointOnGroundNear(
-                -playerTransform.up,
-                playerTransform.position,
-                strikingRange / 2
-            );
-
-            float angleVariance = 80f;
-            float randomXAngle = Random.Range(-angleVariance, angleVariance);
-            float randomYAngle = Random.Range(-angleVariance, angleVariance);
-            Vector3 randomNormal = Quaternion.Euler(randomXAngle, 0, randomYAngle) * spawnPos.normal;
-            Debug.DrawRay(spawnPos.point, spawnPos.normal, Color.red, 10);
-            Debug.DrawRay(spawnPos.point, randomNormal, Color.green, 10);
-
-            Vector3 playerPos = spawnPos.point;
-            Vector3 strikeVector = randomNormal * 20;
-            Vector3 strikePoint = playerPos + strikeVector;
-            Vector3 vectorToPlayer = playerPos - strikePoint;
-            spline.Add(new BezierKnot(strikePoint), TangentMode.AutoSmooth, 1);
-            spline.Add(new BezierKnot(playerPos, -vectorToPlayer, vectorToPlayer));
-
-            // spline.Add(new BezierKnot(spawnPos.point + Vector3.up * 20));
-            // spline.Add(new BezierKnot(spawnPos.point, spawnPos.normal, -spawnPos.normal));
+            // Create the asteroid itself, and assign it to follow the path
+            Asteroid asteroidInstance = _asteroidPool.Get();
+            asteroidInstance.IntactView.SetActive(true);
+            asteroidInstance.SplineAnimate.Container = asteroidPath.Container;
+            asteroidInstance.SplineAnimate.Duration = impactTime;
+            asteroidInstance.SplineAnimate.Restart(true);
         }
     }
 }
