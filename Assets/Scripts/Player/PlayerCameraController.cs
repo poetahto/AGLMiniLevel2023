@@ -1,13 +1,10 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 namespace AGL.Player
-{ 
+{
     /// <summary>
     /// Provides controls for the third person camera. This MonoBehaviour
     /// implements the <c>AxisState.IInputAxisProvider</c> interface which allows it
@@ -25,10 +22,13 @@ namespace AGL.Player
             public float xSensitivity => x / 100.0f;
             public float ySensitivity => y / 100.0f;
         }
-        
-        [Tooltip("The reference to the Input Action that will control the camera rotation")]
-        [SerializeField] private InputActionReference m_lookInputAction;
-        
+
+        [Tooltip("The reference to the Input Action that will control the camera yaw")]
+        [SerializeField] private InputActionReference m_yawInputAction;
+
+        [Tooltip("The reference to the Input Action that will control the camera yaw")]
+        [SerializeField] private InputActionReference m_pitchInputAction;
+
         [Header("Preferences")]
         [Tooltip("The time it will take for the smoothing function to reach the target value")]
         [SerializeField] private float m_rotationSmoothTime;
@@ -41,40 +41,42 @@ namespace AGL.Player
         public Vector3 LookDirection => (targetLookPosition - transform.position).normalized;
 
         private Vector3 targetLookPosition => new(m_target.position.x, transform.position.y, m_target.position.z);
-        private bool isValidInputAction => m_lookInputAction.action.expectedControlType.Contains("Vector2");
-        
+
+        private bool isValidInputAction =>
+            m_yawInputAction.action.expectedControlType.Contains("Axis") &&
+            m_pitchInputAction.action.expectedControlType.Contains("Axis");
+
         private CinemachineVirtualCameraBase m_cinemachine;
         private Transform m_target;
-        private InputAction m_action;
-        
+
         private float m_smoothPitch;
         private float m_pitchSmoothVelocity;
-        
+
         private float m_smoothYaw;
         private float m_yawSmoothVelocity;
 
         private void OnValidate()
         {
-            if (m_lookInputAction == null) return;
-            
+            if (m_yawInputAction == null || m_pitchInputAction == null) return;
+
             if (!isValidInputAction)
             {
-                Debug.LogError($"The InputAction must have a controlType of 'Vector2'");
+                Debug.LogError($"The InputAction must have a controlType of 'Axis'");
             }
         }
 
         private void Awake()
         {
-            m_action = m_lookInputAction.action;
-            m_action.Enable();
-            
+            m_yawInputAction.action.Enable();
+            m_pitchInputAction.action.Enable();
+
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
             m_cinemachine = GetComponent<CinemachineVirtualCameraBase>();
             m_target = m_cinemachine.LookAt;
-            
-            Debug.Assert(isValidInputAction, "The InputAction must have a controlType of 'Vector2'");
+
+            Debug.Assert(isValidInputAction, "The InputAction must have a controlType of 'Axis'");
         }
 
         private void Update()
@@ -86,13 +88,14 @@ namespace AGL.Player
         {
             if (!enabled) return 0.0f;
 
-            var value = m_action.ReadValue<Vector2>().normalized;
-            
+            float pitchDelta = m_pitchInputAction.action.ReadValue<float>();
+            float yawDelta = m_yawInputAction.action.ReadValue<float>();
+
             return axis switch
             {
-                0 => GetYaw(value.x),
-                1 => GetPitch(value.y),
-                _ => 0.0f
+                0 => GetYaw(yawDelta),
+                1 => GetPitch(pitchDelta),
+                _ => 0.0f,
             };
         }
 
@@ -104,7 +107,7 @@ namespace AGL.Player
         private float GetPitch(float y)
         {
             var target = y * m_sensitivity.ySensitivity;
-            
+
             m_smoothPitch = Mathf.SmoothDampAngle(
                 m_smoothPitch,
                 target,
@@ -122,7 +125,7 @@ namespace AGL.Player
         private float GetYaw(float x)
         {
             var target = x * m_sensitivity.xSensitivity;
-            
+
             m_smoothYaw = Mathf.SmoothDampAngle(
                 m_smoothYaw,
                 target,
