@@ -167,9 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ae9e54e86e4ef68204aef196916d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 30
-  asteroidPrefab: {fileID: 498596735300367775, guid: d8a24d75c0c338e4c967835ac0e2cac7,
-    type: 3}
   pathPrefab: {fileID: 5673880889711444856, guid: 1294adeb33f307a4d82d609087cc9d16,
     type: 3}
   targetPositions:
@@ -177,9 +174,55 @@ MonoBehaviour:
   - {fileID: 599584566}
   - {fileID: 1827407705}
   - {fileID: 1805819573}
-  strikingRange: 10
   impactTime: 10
+  strikingRange: 10
   strikingVisualizer: {fileID: 1840911367}
+--- !u!1 &165770421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 165770423}
+  - component: {fileID: 165770422}
+  m_Layer: 0
+  m_Name: sphere asteroid factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &165770422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165770421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f99e1ce7ce944d18890540f93ad27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefab: {fileID: 498596735300367775, guid: afda0d06a5e48a84daad1857db95a5ae,
+    type: 3}
+--- !u!4 &165770423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165770421}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &174252734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -398,9 +441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ae9e54e86e4ef68204aef196916d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 30
-  asteroidPrefab: {fileID: 498596735300367775, guid: d8a24d75c0c338e4c967835ac0e2cac7,
-    type: 3}
   pathPrefab: {fileID: 5673880889711444856, guid: 1294adeb33f307a4d82d609087cc9d16,
     type: 3}
   targetPositions:
@@ -408,8 +448,8 @@ MonoBehaviour:
   - {fileID: 1677762008}
   - {fileID: 1642878777}
   - {fileID: 2024397962}
-  strikingRange: 10
   impactTime: 10
+  strikingRange: 10
   strikingVisualizer: {fileID: 1840911367}
 --- !u!4 &701234975
 Transform:
@@ -425,6 +465,106 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977573054}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &805346919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805346920}
+  - component: {fileID: 805346921}
+  m_Layer: 0
+  m_Name: cube asteroid factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &805346920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805346919}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805346921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805346919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f99e1ce7ce944d18890540f93ad27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefab: {fileID: 498596735300367775, guid: d8a24d75c0c338e4c967835ac0e2cac7,
+    type: 3}
+--- !u!1 &814497558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 814497560}
+  - component: {fileID: 814497559}
+  m_Layer: 0
+  m_Name: asteroid coordinator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &814497559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814497558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24714354a44d4b249ed4f5844fab7602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRate: 30
+  weightedFactories:
+  - factory: {fileID: 805346921}
+    spawnChance: 0.75
+  - factory: {fileID: 165770422}
+    spawnChance: 0.25
+  launchers:
+  - {fileID: 1240773669}
+  - {fileID: 144531096}
+  - {fileID: 701234974}
+--- !u!4 &814497560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814497558}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &885463205
 GameObject:
@@ -1613,9 +1753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ae9e54e86e4ef68204aef196916d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 30
-  asteroidPrefab: {fileID: 498596735300367775, guid: d8a24d75c0c338e4c967835ac0e2cac7,
-    type: 3}
   pathPrefab: {fileID: 5673880889711444856, guid: 1294adeb33f307a4d82d609087cc9d16,
     type: 3}
   targetPositions:
@@ -1623,8 +1760,8 @@ MonoBehaviour:
   - {fileID: 1413572434}
   - {fileID: 1020610050}
   - {fileID: 1297513737}
-  strikingRange: 10
   impactTime: 10
+  strikingRange: 10
   strikingVisualizer: {fileID: 1840911367}
 --- !u!1 &1297513736
 GameObject:
@@ -2756,3 +2893,6 @@ SceneRoots:
   - {fileID: 1902421804}
   - {fileID: 1225081448}
   - {fileID: 1128523341}
+  - {fileID: 814497560}
+  - {fileID: 805346920}
+  - {fileID: 165770423}

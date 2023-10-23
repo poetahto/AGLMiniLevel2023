@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 498596735300367775}
   - component: {fileID: 6531219899129107014}
   m_Layer: 0
-  m_Name: Asteroid
+  m_Name: Cube Asteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,6 @@ GameObject:
   m_Component:
   - component: {fileID: 618296557284976834}
   - component: {fileID: 4911416839170511916}
-  - component: {fileID: 7869723953214621657}
   m_Layer: 2
   m_Name: Death Trigger
   m_TagString: Asteroid
@@ -158,19 +157,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9134997, y: 1.9124854, z: 1.9234684}
   m_Center: {x: -0.00536561, y: -0.0039036572, z: -0.012768924}
---- !u!114 &7869723953214621657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2773527442989171811}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcf802a53a934ce899a70d18777467d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 10
 --- !u!1 &3969907135166980240
 GameObject:
   m_ObjectHideFlags: 0

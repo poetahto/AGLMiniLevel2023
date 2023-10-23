@@ -4,6 +4,7 @@ using UnityEngine.Splines;
 
 namespace DefaultNamespace
 {
+    // Some object that can fall from the sky and crash into the ground.
     public class Asteroid : MonoBehaviour
     {
         [SerializeField]
@@ -43,6 +44,7 @@ namespace DefaultNamespace
         {
             Vector3 velocity = (transform.position - _previousPosition) / Time.deltaTime;
 
+            // We don't want to crash into other asteroids (or asteroid debris)
             if (!other.CompareTag("Asteroid"))
             {
                 particleEffect.Play();
