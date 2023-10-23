@@ -42,6 +42,16 @@ namespace InventorySystem
 
             m_root.style.display = DisplayStyle.None;
         }
+        
+        private void OnEnable()
+        {
+            m_inventory.OnInventoryChanged += InventoryChanged;
+        }
+
+        private void OnDisable()
+        {
+            m_inventory.OnInventoryChanged -= InventoryChanged;
+        }
 
         private void OnPointerUp(PointerUpEvent evt)
         {
@@ -54,18 +64,42 @@ namespace InventorySystem
             {
                 var slot = inventorySlots.OrderBy(s => Vector2.Distance(s.worldBound.position, m_ghostIcon.worldBound.position))
                     .First();
+
+                if (slot.isEmpty())
+                {
+                    slot.SetItem(m_origin.Item);
+                    if (slot != m_origin)
+                    {
+                        m_origin.ClearItem();
+                        m_origin = null;
+                    }
+                }
                 
-                slot.SetItem(m_origin.Item);
-                
-                m_origin.ClearItem();
+                m_origin?.SetItem(m_origin.Item);
+                m_isDragging = false;
             }
             else
             {
-                m_origin.SetItem(m_origin.Item);
+                Instantiate(m_origin.Item.Data.Prefab, transform.position + transform.forward * 2f,
+                    Quaternion.identity);
+                
+                m_inventory.Remove(m_origin.Item.Data);
+
+                if (m_origin.Item != null)
+                {
+                    m_origin.SetItem(m_origin.Item);
+                }
+                else
+                {
+                    m_origin.ClearItem();
+                    m_origin = null;
+                }
+                
+                
+                m_isDragging = false;
             }
 
-            m_isDragging = false;
-            m_origin = null;
+            
             m_ghostIcon.style.visibility = Visibility.Hidden;
         }
 
@@ -78,16 +112,6 @@ namespace InventorySystem
             
             m_ghostIcon.style.top = evt.position.y - m_ghostIcon.layout.height / 2;
             m_ghostIcon.style.left = evt.position.x - m_ghostIcon.layout.width / 2;
-        }
-
-        private void OnEnable()
-        {
-            m_inventory.OnInventoryChanged += InventoryChanged;
-        }
-
-        private void OnDisable()
-        {
-            m_inventory.OnInventoryChanged -= InventoryChanged;
         }
 
         private void InventoryChanged(InventoryItem _item, InventoryChangeType _changeType)

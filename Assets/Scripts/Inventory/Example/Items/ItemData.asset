@@ -15,4 +15,4 @@ MonoBehaviour:
   Name: Sword 1
   Description: 
   Icon: {fileID: 599239561, guid: 0116565683f67cd45b6afd9a74b7debb, type: 3}
-  Prefab: {fileID: 0}
+  Prefab: {fileID: 5014540353272651447, guid: 865e63c125d96e849af96ed6f265114b, type: 3}

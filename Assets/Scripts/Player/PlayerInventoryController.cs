@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using InventorySystem;
+using MiniTools.BetterGizmos;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -30,6 +32,24 @@ public class PlayerInventoryController : MonoBehaviour
             Cursor.visible = !Cursor.visible;
             Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked) ? CursorLockMode.None : CursorLockMode.Locked;
         }
+
+        var collectables = Physics.OverlapSphere(transform.position, 5f).Where(c => c.TryGetComponent(out ICollectable o)).ToList();
+
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            if (collectables.Count != 0)
+            {
+                if (collectables[0].TryGetComponent(out ICollectable c))
+                {
+                    c.Collect(m_inventory);
+                }
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        BetterGizmos.DrawSphere(Color.green, transform.position, 5.5f);
     }
 }
 
