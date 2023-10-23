@@ -23,6 +23,8 @@ namespace AGL.Player
             public float ySensitivity => y / 100.0f;
         }
 
+        [SerializeField] private InputHandler m_input;
+
         [Tooltip("The reference to the Input Action that will control the camera yaw")]
         [SerializeField] private InputActionReference m_yawInputAction;
 
@@ -87,14 +89,14 @@ namespace AGL.Player
         public float GetAxisValue(int axis)
         {
             if (!enabled) return 0.0f;
-
+            
             float pitchDelta = m_pitchInputAction.action.ReadValue<float>();
             float yawDelta = m_yawInputAction.action.ReadValue<float>();
 
             return axis switch
             {
-                0 => GetYaw(yawDelta),
-                1 => GetPitch(pitchDelta),
+                0 => GetYaw(m_input.LookYaw),
+                1 => GetPitch(m_input.LookPitch),
                 _ => 0.0f,
             };
         }

@@ -1,0 +1,49 @@
+VisualElement {}
+
+.header {
+    -unity-font-style: bold;
+    font-size: 20px;
+}
+
+.list-item {
+    
+}
+
+.list-item:hover {
+    background-color: #808080;
+    border-color: darkgray;
+    border-width: 1px;
+    border-radius: 5px;
+    
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.1s;
+}
+
+.list-item:checked {
+    background-color: #808080;
+    border-radius: 5px;
+}
+
+#itemData-scroll {
+    flex-grow: 1;
+}
+
+#icon-preview {
+    width: 25%;
+    height: 25%;
+    align-self: center;
+}
+
+Box {
+    flex-grow: 1;
+}
+
+TemplateContainer {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+ListView {
+    width: 25%;
+    -unity-text-align: middle-center;
+}

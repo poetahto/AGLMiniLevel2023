@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9c22576e006485fb8a027f0c4433df6, type: 3}
+  m_Name: PlayerInventory
+  m_EditorClassIdentifier: 
+  m_maxCapacity: 15
+  InventoryItems:
+  - m_data: {fileID: 11400000, guid: ecd9ee045c3875744ae146f24b62a3b5, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: a1718e61c525a50418bd5d4b4e718f20, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: 133fa0446e96b6845b6e34bdccf28161, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: f559cdbe0bed2ba4c93228a487beb623, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: 86a4eeed51ef37441b4de5d4d0d4b44d, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: 52f88b6a90c98ce4fb2bc599061e21be, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: c57a17c29c982894686ca9395456eae4, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: f66d475b2ce8fa947b4e77a158877876, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: 08f902498b23e5048badc6974f793a2d, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: f47279a1248811d46af19ae93c9aebb5, type: 2}
+    m_stackSize: 1
+  - m_data: {fileID: 11400000, guid: d2ddf65e6107cf541a8cf73eee2b3ada, type: 2}
+    m_stackSize: 1

@@ -1,0 +1,5618 @@
+fileFormatVersion: 2
+guid: 0116565683f67cd45b6afd9a74b7debb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 957
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f0385acae30864a8408c169bb12240
+      internalID: 599239561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 958
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202511d04a2ce16499e6126785c8343e
+      internalID: 238866667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 959
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263a045dfdb57eb4fb23c7de93a9fe5c
+      internalID: 725031551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 959
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119c5b2f0b46c8f439ffb054fdd14942
+      internalID: -1095530355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 958
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9015d548172bbcf43ab7e944da8c93e8
+      internalID: -1794384378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_5
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 957
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e86d7dae58eb145b5f9ffb9d23db25
+      internalID: -2109142157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_6
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 967
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857b6931d0a4902488069372c47e43dd
+      internalID: 1152398185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_7
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 963
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a8c7f3ea5c46743b565f3057f2895b
+      internalID: 607987526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_8
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 963
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bde92cc5548e44792fac84bef7b8ce
+      internalID: 1166444604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_9
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 957
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53103e2b9789a85448d0effea7c4882b
+      internalID: 1791480646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_10
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 958
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5d6bb043dd45c4f983ba1e7c8d484c
+      internalID: -2017626536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_11
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 958
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955ec3e91fcbd3143805dbbdc1cb721a
+      internalID: 1445423911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_12
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 960
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c239f97c5c9e3449d85c04189183f1
+      internalID: 686774247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_13
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 958
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3ed3bbb1447b24c958715d97dff5a0
+      internalID: 1214775490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_14
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 959
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef5a7b89a6c5ce4faecc4ec1dfd6de3
+      internalID: 420830286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_15
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 959
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a703fd397b033cb47bb8de07c5ae6a24
+      internalID: 1260434210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_16
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 958
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609ce44049cd37d4da8bd19604146ed2
+      internalID: -1171010189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_17
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 957
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43af8e2437dbc384abfbfaf12ec00622
+      internalID: 1392573439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_18
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 957
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7debccd56b1d394987f9d33ec997843
+      internalID: 1447945880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 888
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5f9da58f90edf4eaaf804346ef59ac
+      internalID: 936658915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 888
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3001a31425012941bdd932a1f5e9282
+      internalID: -427676718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_21
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 888
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa0a244a31e04f4c8d0281fee9547bd
+      internalID: 700753675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 889
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a14daa13498774b845d520cef51daa
+      internalID: -292261465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_23
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 888
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75db9ea358e5ad4428486cff42168a15
+      internalID: 15931168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_24
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 893
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ce5505c3b2b604cb185717c769a68f
+      internalID: 184693224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_25
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 890
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fae338ec5e3a8419295bd0cb8f2adc
+      internalID: -373575861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_26
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 888
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a87f3b120078241966044caac05ddf
+      internalID: 90898555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_27
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 888
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3c981268bdd644cb2d105fdb05cbd5
+      internalID: -366570013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_28
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 888
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f625782e9bfbf409463d05fb3fd564
+      internalID: -1550853997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_29
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 888
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af4eab0665a35644b1abdde6a2f49cf
+      internalID: 1931391902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_30
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 893
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cc906e69d2212419992cefb2e0ff0e
+      internalID: 155152906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_31
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 891
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b447e7ec69b0343ac4099cd1d3b794
+      internalID: 1408502140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_32
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 889
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ad91c57bb1e75408a4ac8b97eb26d9
+      internalID: 181906863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_33
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 891
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf12c42186917b4dac8c6634b06d3ee
+      internalID: 1821305125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_34
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 889
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2758618e8af1d754b8c30eae7e270012
+      internalID: 1354235610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_35
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 890
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eac3e8cad46de54eb24bc61f2336247
+      internalID: -1806293901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_36
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 889
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e04d75a272076e4698684aaf9593950
+      internalID: -2036936616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_37
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 888
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4668e809020ccd84f941155427f5a1be
+      internalID: 100583181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 819
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff9c72c361b74e4ead6255148807151
+      internalID: 1905274154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 819
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f26bf26a7e90d84d987fea5e15271b0
+      internalID: 1158104894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_40
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 819
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c52788d2f4c40489fd89dac71aac47
+      internalID: 2065317793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 819
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4edad1ec04e73e468c80e05a013f435
+      internalID: 130167921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_42
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 819
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe3c0f9a46039c4b8b9fdd8166f72e6
+      internalID: 1964711042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_43
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 820
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b229971d60131144289a9ec1ff2832d1
+      internalID: 992496340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_44
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 820
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4abede4060cc404ebd38c59c4d22d51
+      internalID: 1374728821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_45
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 819
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da028ad90ed7fc4482a243aba5f72a2
+      internalID: 1128129937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_46
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 827
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aafbd31823ceda4786fb476e6551a17
+      internalID: -1850240665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_47
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 820
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e13ecc114ccbe449aae8bf6682d6c53
+      internalID: -2124623363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_48
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 820
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b64c24ac80374c40b0e5e7d3867d1a5
+      internalID: -12177061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_49
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 819
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed417b1de8358c42994b11929e92db9
+      internalID: -922042811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_50
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 828
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277bc58121888cc42954ece3092e5f54
+      internalID: -1471387918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_51
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 820
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a788108b7a2be9445b3f8f2865b984a2
+      internalID: -878055422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_52
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 820
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea76e5c01277f14685d6aa24d50a645
+      internalID: -762363542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_53
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 819
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba516028a630b6459797e78962bb4d7
+      internalID: 888285739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_54
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 823
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c61154be7e160645874d5d87a2da6e8
+      internalID: -286311835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_55
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 819
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9e27e3b288ae145ae8066f0b72f260
+      internalID: 1292015884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_56
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 819
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1560aa52f8243409ae3d856f00d9f6
+      internalID: 1756078464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_57
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 750
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24e66b6025ae7e41a0e906f2d28c583
+      internalID: 1448921308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_58
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 750
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b649c089dd18bd4e9ff82ec43c7f0b3
+      internalID: -1602882948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_59
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 750
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe8e7cf8e50f784da46bb69aba7a74b
+      internalID: 528846322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_60
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 750
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135e59a69b1934944ae079df4e07291a
+      internalID: -886837644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_61
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 750
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737a2e8fc8e6ab946b7e5dec086c9dd0
+      internalID: 1231263817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_62
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 750
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dba257d5f4b1842bcbd06a06c68fc5
+      internalID: -389580826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_63
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 750
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a79ad40c40f6eb4a96b730beb239607
+      internalID: 228963887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_64
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 750
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b601d776794994fba182ac985daf81
+      internalID: -1028610494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_65
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 751
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4c813f51735db49a3989f87730f14a
+      internalID: -1073536018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_66
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 750
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c081d5145f91564caa2250c21949ee4
+      internalID: 1559907271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_67
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 751
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d48a97ab45187b4785e62ec82b550e6
+      internalID: -2109413814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_68
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 751
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5e7f7b34d06cf4c993ddd1fb9d3f57
+      internalID: -683124491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_69
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 751
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cccc01343c5b1246b0d08f04f00fe3f
+      internalID: 286862127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_70
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 750
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c3a819981858041b0d9fd55e1f9e49
+      internalID: -134710823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_71
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 750
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea96dad061451b249a6bf7d6f0b49775
+      internalID: -678759206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_72
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 751
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064108ef2707c8749b21291e4310fa84
+      internalID: -1138188797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_73
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 751
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89740a631e228144a2c6e9d5cde8b30
+      internalID: -1574644965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_74
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 752
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a81c77d05d0e64da0af20de4925a18
+      internalID: -1722755298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_75
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 752
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d105ebd7f02cd524a85a22cf255bb06e
+      internalID: 1575697718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 683
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22e11717c4e409408bd109879db01c6
+      internalID: 1280814527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_77
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 683
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f9813270bb86e4b86a2299fe35afe3
+      internalID: 9155801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_78
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 683
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e34cb014a8206459d1304c2c8432f8
+      internalID: -2107798358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_79
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 683
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b29ffa84859d9439026a44036133a8
+      internalID: -564177541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_80
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 683
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641cc35d1769d6d4aafc5021845d2800
+      internalID: -50517811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_81
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 682
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1830c51ee4165141bf0f61d6cf43a7a
+      internalID: -718554220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_82
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 683
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081b8b01b3dc1ff4d8a87002dadadd09
+      internalID: 16958567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_83
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 684
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69be99e4288b9b7429f74cba228841cd
+      internalID: -368996668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_84
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 681
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8351a8bbd313f04593f9ab53cff4f4c
+      internalID: 1404330613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_85
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 681
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b445610028e3d384ca2d4d3aa17ea447
+      internalID: -1826875621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_86
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 681
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bea1255df9c1ab489f67918a5f05d02
+      internalID: 586085166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_87
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 682
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e3e922241c80b4db5a924db58ce73d
+      internalID: 156559256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_88
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 681
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6196cffa5904cc14cab4c4df39e06a2e
+      internalID: -451050028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_89
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 682
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7116fd78e85a164283e26858ce2e2fe
+      internalID: -1024952335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_90
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 682
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf480b9ce06c7a4383c6f3eb451ebaa
+      internalID: -1556097876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_91
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 683
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525e9a10a0af1a146a610be092b0f6be
+      internalID: 274703132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_92
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 682
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114adafe5e58b214abb9f4d7ce14f284
+      internalID: 1908164758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_93
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 681
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf0b67afd7803947a1aef1785520fe7
+      internalID: -423035215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_94
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 681
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712652fcee488a4458905ed03ac34197
+      internalID: 1968606487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_95
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 612
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea62ec91afe1ef4580a50f835268595
+      internalID: 1072812736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_96
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 614
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee93de22b7946f48b83f31ffae304cb
+      internalID: -256661414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_97
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 615
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7288b619822481844a48d981d6556577
+      internalID: -597923302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_98
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 615
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d896a922552964dbd2b7c4f56db1af
+      internalID: -1301183300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_99
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 614
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde127902282f5742a59e1024c37f098
+      internalID: -1537427520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_100
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 615
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2b38bbdc353f141b015bfffd3a8380
+      internalID: -487802023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_101
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 613
+        width: 57
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f327d1ed93c6247aaa7c64e04902c7
+      internalID: 1302078546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_102
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 617
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77824ac8b53478f4f83c651a79a9d98b
+      internalID: 1904953476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_103
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 615
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a289e80c35f06ae4bba737f5a89b7de9
+      internalID: -117570748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_104
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 614
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3980fbf1b377824fa2b53754afeb9e8
+      internalID: -1778248294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_105
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 613
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fffd52533a62144aab2152c06d3b7cd
+      internalID: 1827876010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_106
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 617
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f02b41ff058ba40b7915116782db51
+      internalID: -1196302854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_107
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 614
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa4b85c6c5e18c45a5a11e3893a58a7
+      internalID: 14257439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_108
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 618
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61c88c1e29f5f94b862a2855a15175f
+      internalID: 13925896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_109
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 617
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277cf7796d0b77e48b4a22cb5df6e560
+      internalID: 1168953617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_110
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 613
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f34201fed0e5441adf7b0d7587a214
+      internalID: -1918450277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_111
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 612
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb4c5ce6f710f9428c35bef230f8b2a
+      internalID: 1433311515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_112
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 613
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50f4a0efca237242a73a3884b437a68
+      internalID: -2070369896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_113
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 613
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bd9da126e14004ea775cbd886ced31
+      internalID: 619789043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_114
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 543
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60f08b5b360c23498df9aeed12b4969
+      internalID: 687291393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_115
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 543
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c8636493aa5e149a057617cfe93440
+      internalID: 1136585762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_116
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 543
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a370e6a3d55f457408d1cb816ca59614
+      internalID: 1870297025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_117
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 543
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd16f9c56731d040987801bd3659c29
+      internalID: 686704572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_118
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 543
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3b73a932f82c249979ffed9514746a
+      internalID: 646678469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_119
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 543
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe9e1ec330cd4d42933b092ef15c874
+      internalID: 338361520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_120
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 544
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f9c752b5232d9428bbefb5509c19f2
+      internalID: 914288186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_121
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 544
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbbca5f064883c4580d404414c06efc
+      internalID: -2080751969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_122
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 544
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26277f4b87df2d4283216ba2ee93e45
+      internalID: -311182148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_123
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 544
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f076f04ca45420f4d9e416f9216bc7f6
+      internalID: -1457903270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_124
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 545
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1f5ac0c9746aa4fbe92d1b3b2049f2
+      internalID: -407462333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_125
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 543
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2f2f03ff6baf0469582e919da98383
+      internalID: -1108323886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_126
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 544
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3738f2274e12a446b1fdecffc01437d
+      internalID: -1501294849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_127
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 548
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05161df2b922e4e4f8e5bac4f1ba1fdc
+      internalID: -2134756577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_128
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 545
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3458436172b714fb569e1f5fad2dbb
+      internalID: 1850204386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_129
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 543
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befa56408e0190e45a7b1981215f8227
+      internalID: 961476084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_130
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 547
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9548bb54526cc46ab63e651cce85fb
+      internalID: 1973625770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_131
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 546
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c815c8d294b344ea9e0894e010e90b
+      internalID: -1401020827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_132
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 544
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d4577c648e2294ebf19ae48e4d30e9
+      internalID: -1048344180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_133
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 477
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8a97c166cf845498b42a786f2c1e6e
+      internalID: -1636959559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_134
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 479
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05ab20e29860b447ac06313c1f5aff8
+      internalID: 218131777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_135
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 476
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a838184bb314044b9be45bef9a83a4
+      internalID: -782154583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_136
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 474
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a066167aa1353f04b884c06c16889519
+      internalID: -1780315018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_137
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 474
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31491867c2a556b4eaddfed073095e2a
+      internalID: 2055995210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_138
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 477
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c819e609849dbf546978bba5c69c65ab
+      internalID: -1445316922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_139
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 474
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a0458e4be5cf5439a0fa27de2dc549
+      internalID: -116128538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_140
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 475
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c48836ae8b44fa48996df08fb06baeb
+      internalID: 1770162262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_141
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 474
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc96941da18b22a4e8628a3b2ddeb167
+      internalID: 1504681217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_142
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 476
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494738ad86495dd46a4ac334725dbd09
+      internalID: -1894158155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_143
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 478
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218a9d1ecf9ff0e478c1f4936aa521e6
+      internalID: 1714499555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_144
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 476
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a11999e6107fad488db99effb0d7381
+      internalID: 1846593944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_145
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 478
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb28087c75a1544a9f6f8061a7e1366
+      internalID: -57853000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_146
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 477
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef86b1a40342564588bf5bb7752b562
+      internalID: -1067047412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_147
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 476
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fee639ea3c1154491f4edab826d535
+      internalID: -1160540781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_148
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 474
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c08dc9337359e74ebe732968ff45b2e
+      internalID: -328129063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_149
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 474
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae98c41fb4977c40915aab36b9ec548
+      internalID: 656688125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_150
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 477
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352372c406dd34d41a2a233fe7b9cc4e
+      internalID: 1408176188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_151
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 476
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb4955e020e6f647b1796d21090d528
+      internalID: -203948804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b46b0fd270cf6c42969fe11555fb6ce
+      internalID: 1910320983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_153
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 412
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16358b7bdbf64e40bbc55e5854a0139
+      internalID: -2104551956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_154
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 407
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c669e3dc96e9c294a9344afe1507f46b
+      internalID: -387732130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_155
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 419
+        width: 64
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ab7812fce9ae04c9514b7ba53e4868
+      internalID: 777485953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_156
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 409
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7dd97a8ac2aea4b909c30e6b2ba8ba
+      internalID: 2019273276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_157
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 406
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f74f4816f14cff4bb24241cb3bdf59d
+      internalID: 931996737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_158
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 405
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714f0e0f3fb031340904042d5b0496a2
+      internalID: -1078871171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_159
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 411
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b6caa33fd92d14681a3795e190a4c1
+      internalID: 1417846297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_160
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 407
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563da589ae1794b4190eeb5c5e5c5740
+      internalID: 773753763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_161
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 407
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c626f5e39d2d96d4eb89b870f4ca7ef6
+      internalID: -1498831588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_162
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 408
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7cc1909c921c946834fe286af2ccbb
+      internalID: -1268954855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_163
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 405
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda4cf3217424f14e80537fe30c26f50
+      internalID: -1246180222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_164
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 407
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d9dc8f90bcf114eb1a8be5dd1575ac
+      internalID: -2057451755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_165
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 405
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7457be2af12403444a2cb06f713111ae
+      internalID: -35591353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_166
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 412
+        width: 62
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ffede042532ae41b996dbaff83edd0
+      internalID: 285916528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_167
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 405
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18d71e3f1fc08e4eaf040407f34e7f9
+      internalID: -282270595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_168
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 411
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8616ebd4b0c63f648915495ce59f4c0b
+      internalID: 1054461357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_169
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 406
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c134b0599bf35e849bcda8c22ab0c5d9
+      internalID: 966615402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_170
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 407
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffd5b5b9816fa246b8112b9d79d2821
+      internalID: -1186396863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_171
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 342
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7e01243d3cd164cb328f850fc9e8f6
+      internalID: -1207857790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_172
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 336
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc84eeac9d8b71e4ca94f4e1d65ecc5f
+      internalID: 30044619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_173
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 338
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be04f93fd3b3dd044a406e29ce6cc859
+      internalID: -2055441190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_174
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 340
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777ea0c0e966aec49b46b601f4febf97
+      internalID: -249700281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_175
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 337
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bfaea65713acc408714c9d7afe9457
+      internalID: 723895329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_176
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 338
+        width: 62
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c548bc8449ceb042aa2d8bff489c25a
+      internalID: 2062441755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_177
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 342
+        width: 62
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894dc2bf2708d8140b3c38aef739f539
+      internalID: -1693984459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_178
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 338
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a7589fa6671f24a803243efc7b6f53
+      internalID: -295038680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_179
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 336
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe282ee2a956f064f99eeefc76c09228
+      internalID: -1679197227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_180
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 347
+        width: 64
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9357618d8ca992f4ca68dead13727aa1
+      internalID: 18170640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_181
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 338
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f298fcd7c3ec6439a0e85f6fb7e8cc
+      internalID: -1479918557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_182
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 339
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803d01b2d2583ea4eb5b6cb6f8fde7b9
+      internalID: -1465623620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_183
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 339
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2ad929f6802964da4404c5cc4251c0
+      internalID: -1531587658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_184
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 337
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4298a9949a8cb444a11b70c5ad967d8
+      internalID: -1942736327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_185
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 336
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d968b7d3839334a900e3fbfd653614
+      internalID: -714361855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_186
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 341
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ad5997fb22fc04e926b065cbca7422
+      internalID: -1460214401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_187
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 342
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e80afd2390bd943ab8fdafbf792c37
+      internalID: -1891305924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_188
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 344
+        width: 24
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3654ef6f13e84548b1cae3a3c1fbab2
+      internalID: -2051827846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_189
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 337
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e1855e089e34f43baa449786405515
+      internalID: 1387402029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_190
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 336
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca825c639b2f2aa459abee80e8033957
+      internalID: -1731916854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_191
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 268
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c80bec3e02d0544cb5f2b6e5225f15f
+      internalID: -1417937936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_192
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 268
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9f583f8a02bd244b0ae560fb68ba34
+      internalID: 1977628531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_193
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 268
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268fa36bc34fe634d9cf79f543cb09b4
+      internalID: 785024451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_194
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 268
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d34a579cc73834d88fbeb6c8b0132e
+      internalID: -991283603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_195
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 269
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046bcfef2bc0f7749918dbb334d2b875
+      internalID: 1971468660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_196
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 267
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0291ed02e3bccfe4f9127a60292601b2
+      internalID: -949472553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_197
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 268
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78efc365650b53a4790e44fe493b5e1b
+      internalID: 1238161970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_198
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 267
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbd525f8bd7fb046b20080f2194d53f
+      internalID: 1081826616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_199
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 270
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d7d968ec5eb264095d5861a60c8541
+      internalID: 582401388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_200
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 267
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917207fc54a6056469ac49607c67111e
+      internalID: 878379993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_201
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 269
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbc4f598b134b14e844e62c7573ce46
+      internalID: -1066607390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_202
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 267
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cce0251633dc24a9aed907ad766fae
+      internalID: 1070282300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_203
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 268
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd163139fc455e469ca2fa5fee3917c
+      internalID: -824141385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_204
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 268
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b0d6af9663eea4298c1e6bb240e358
+      internalID: -1814184791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_205
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 267
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb17dab45b75f745bc93d37bf0dafbc
+      internalID: -638752334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_206
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 268
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc638b894ce37d94d9887cd473d81af7
+      internalID: -1914145927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_207
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 267
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019c67b2222b6dc45a08e7f7aa35666e
+      internalID: 560269065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_208
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 267
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67884a06b91abb14b824c470db6c3173
+      internalID: 1094560927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_209
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 267
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336cc54f6e19904489207f1a65f5b8d9
+      internalID: -909627593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_210
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5557d079437cb754d8d8aa3b32b77936
+      internalID: -1656197473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_211
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 199
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fd8ebf65dbbfd49a9725748a6ccf89
+      internalID: -9259198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_212
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 199
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0201f06ed83316458804f6fa324ce89
+      internalID: 976208002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_213
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 198
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7df0bd1ce47924fa31055ee759f6ed
+      internalID: -1262391250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_214
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 198
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80329f2bf92199249b93565dfb5b3584
+      internalID: 1883517109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_215
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 199
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8149f1ed90bf4b44699a3fa009980693
+      internalID: -1094887297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_216
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 199
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d48ea8ec9181b64fa711694dd7f0176
+      internalID: -106828500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_217
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 198
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f96b52e131c374d9aa56ace9b6f442
+      internalID: 1250828685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_218
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 200
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e66fbea82165441a8821d3285f4b66
+      internalID: -698424676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_219
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 199
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5be33fa2be58464496e2fbe97c8eed5
+      internalID: 1612275164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_220
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 200
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8693dca9c0b865b4c8fbd6c2c7771d59
+      internalID: 1791409892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_221
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 199
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a92c5678163b6844b1dd07506db3b55
+      internalID: 996339874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_222
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 200
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cbfb8300911f84a9b63dc933b27ea2
+      internalID: 1959465317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_223
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 201
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20b61c2e86e55949821f3bfd77b9317
+      internalID: -1718412777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_224
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 199
+        width: 63
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4334c0a9d2638e24ca3c5394621ce9ab
+      internalID: -766162013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_225
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 199
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40bd22d0ed0dd04cacf68a4f3fb03c8
+      internalID: -207163871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_226
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 198
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96431a021239914f88784fc396bb2cf
+      internalID: 961839888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_227
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 199
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f7e0b8cba7e9244b12d3891c6684a1
+      internalID: -1038579907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_228
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 199
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb357d5e7ff95224b843d1aafe9e4e02
+      internalID: 1883947249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_229
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 130
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83211794eae182547ac319ecab8b0238
+      internalID: 2131325631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_230
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 130
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f887b4d59b521714d9684e080e8fa6f3
+      internalID: 1342449283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_231
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 131
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421bd4d78fb11b1428426f2426d78e14
+      internalID: -366006076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_232
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 136
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1cc285089b12e4880f89bf6a7b4ab7
+      internalID: 1488549857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_233
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 129
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c1b3306c6075d428856c8008d1ff8d
+      internalID: 669638556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_234
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 130
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3283f8a6b463c4141b197bec15d7367e
+      internalID: -704284264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_235
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 130
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f80d829ac845eb44aa70c9f8edf7f36
+      internalID: 1215301366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_236
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 130
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadc878ae5b858f429c76638943c149d
+      internalID: 245427067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_237
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 129
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224e18d71496b2a41b4ffade1d70d797
+      internalID: -1097339417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_238
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61fc1c2b494ab34cbc72f59cfad42e4
+      internalID: -497131980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_239
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafea7d2db911f646859953f9bca377c
+      internalID: -1380204679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_240
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44d27ecc7635ed4bac0a9462ba4fc8b
+      internalID: -182023350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_241
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc7e60f901f700489e6cc7c827c077c
+      internalID: -1968926501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_242
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aacbfb1ecfffef4bb692c34f10d1338
+      internalID: 972549139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_243
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 129
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557a5abe9392cf2479873f77890c1761
+      internalID: -2111212085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_244
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 129
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdff67ed01582df49b4f7494adb45f43
+      internalID: -574502756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_245
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 129
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d708dd6750ffe22488376658b0a38146
+      internalID: -1725244321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_246
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 129
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a774a54e64a9d346ba65d5f6cb8486a
+      internalID: 1770037240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_247
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 129
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3380de785e8314349a55fc3780c5a790
+      internalID: -1739333873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii - Sonic and The Black Knight - Item Icons_248
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 158
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041ab4b132dbf2845822dcffc0b97392
+      internalID: -855418858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 82eaae371d323244fbcda9dc9cccc22d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wii - Sonic and The Black Knight - Item Icons_0: 599239561
+      Wii - Sonic and The Black Knight - Item Icons_1: 238866667
+      Wii - Sonic and The Black Knight - Item Icons_10: -2017626536
+      Wii - Sonic and The Black Knight - Item Icons_100: -487802023
+      Wii - Sonic and The Black Knight - Item Icons_101: 1302078546
+      Wii - Sonic and The Black Knight - Item Icons_102: 1904953476
+      Wii - Sonic and The Black Knight - Item Icons_103: -117570748
+      Wii - Sonic and The Black Knight - Item Icons_104: -1778248294
+      Wii - Sonic and The Black Knight - Item Icons_105: 1827876010
+      Wii - Sonic and The Black Knight - Item Icons_106: -1196302854
+      Wii - Sonic and The Black Knight - Item Icons_107: 14257439
+      Wii - Sonic and The Black Knight - Item Icons_108: 13925896
+      Wii - Sonic and The Black Knight - Item Icons_109: 1168953617
+      Wii - Sonic and The Black Knight - Item Icons_11: 1445423911
+      Wii - Sonic and The Black Knight - Item Icons_110: -1918450277
+      Wii - Sonic and The Black Knight - Item Icons_111: 1433311515
+      Wii - Sonic and The Black Knight - Item Icons_112: -2070369896
+      Wii - Sonic and The Black Knight - Item Icons_113: 619789043
+      Wii - Sonic and The Black Knight - Item Icons_114: 687291393
+      Wii - Sonic and The Black Knight - Item Icons_115: 1136585762
+      Wii - Sonic and The Black Knight - Item Icons_116: 1870297025
+      Wii - Sonic and The Black Knight - Item Icons_117: 686704572
+      Wii - Sonic and The Black Knight - Item Icons_118: 646678469
+      Wii - Sonic and The Black Knight - Item Icons_119: 338361520
+      Wii - Sonic and The Black Knight - Item Icons_12: 686774247
+      Wii - Sonic and The Black Knight - Item Icons_120: 914288186
+      Wii - Sonic and The Black Knight - Item Icons_121: -2080751969
+      Wii - Sonic and The Black Knight - Item Icons_122: -311182148
+      Wii - Sonic and The Black Knight - Item Icons_123: -1457903270
+      Wii - Sonic and The Black Knight - Item Icons_124: -407462333
+      Wii - Sonic and The Black Knight - Item Icons_125: -1108323886
+      Wii - Sonic and The Black Knight - Item Icons_126: -1501294849
+      Wii - Sonic and The Black Knight - Item Icons_127: -2134756577
+      Wii - Sonic and The Black Knight - Item Icons_128: 1850204386
+      Wii - Sonic and The Black Knight - Item Icons_129: 961476084
+      Wii - Sonic and The Black Knight - Item Icons_13: 1214775490
+      Wii - Sonic and The Black Knight - Item Icons_130: 1973625770
+      Wii - Sonic and The Black Knight - Item Icons_131: -1401020827
+      Wii - Sonic and The Black Knight - Item Icons_132: -1048344180
+      Wii - Sonic and The Black Knight - Item Icons_133: -1636959559
+      Wii - Sonic and The Black Knight - Item Icons_134: 218131777
+      Wii - Sonic and The Black Knight - Item Icons_135: -782154583
+      Wii - Sonic and The Black Knight - Item Icons_136: -1780315018
+      Wii - Sonic and The Black Knight - Item Icons_137: 2055995210
+      Wii - Sonic and The Black Knight - Item Icons_138: -1445316922
+      Wii - Sonic and The Black Knight - Item Icons_139: -116128538
+      Wii - Sonic and The Black Knight - Item Icons_14: 420830286
+      Wii - Sonic and The Black Knight - Item Icons_140: 1770162262
+      Wii - Sonic and The Black Knight - Item Icons_141: 1504681217
+      Wii - Sonic and The Black Knight - Item Icons_142: -1894158155
+      Wii - Sonic and The Black Knight - Item Icons_143: 1714499555
+      Wii - Sonic and The Black Knight - Item Icons_144: 1846593944
+      Wii - Sonic and The Black Knight - Item Icons_145: -57853000
+      Wii - Sonic and The Black Knight - Item Icons_146: -1067047412
+      Wii - Sonic and The Black Knight - Item Icons_147: -1160540781
+      Wii - Sonic and The Black Knight - Item Icons_148: -328129063
+      Wii - Sonic and The Black Knight - Item Icons_149: 656688125
+      Wii - Sonic and The Black Knight - Item Icons_15: 1260434210
+      Wii - Sonic and The Black Knight - Item Icons_150: 1408176188
+      Wii - Sonic and The Black Knight - Item Icons_151: -203948804
+      Wii - Sonic and The Black Knight - Item Icons_152: 1910320983
+      Wii - Sonic and The Black Knight - Item Icons_153: -2104551956
+      Wii - Sonic and The Black Knight - Item Icons_154: -387732130
+      Wii - Sonic and The Black Knight - Item Icons_155: 777485953
+      Wii - Sonic and The Black Knight - Item Icons_156: 2019273276
+      Wii - Sonic and The Black Knight - Item Icons_157: 931996737
+      Wii - Sonic and The Black Knight - Item Icons_158: -1078871171
+      Wii - Sonic and The Black Knight - Item Icons_159: 1417846297
+      Wii - Sonic and The Black Knight - Item Icons_16: -1171010189
+      Wii - Sonic and The Black Knight - Item Icons_160: 773753763
+      Wii - Sonic and The Black Knight - Item Icons_161: -1498831588
+      Wii - Sonic and The Black Knight - Item Icons_162: -1268954855
+      Wii - Sonic and The Black Knight - Item Icons_163: -1246180222
+      Wii - Sonic and The Black Knight - Item Icons_164: -2057451755
+      Wii - Sonic and The Black Knight - Item Icons_165: -35591353
+      Wii - Sonic and The Black Knight - Item Icons_166: 285916528
+      Wii - Sonic and The Black Knight - Item Icons_167: -282270595
+      Wii - Sonic and The Black Knight - Item Icons_168: 1054461357
+      Wii - Sonic and The Black Knight - Item Icons_169: 966615402
+      Wii - Sonic and The Black Knight - Item Icons_17: 1392573439
+      Wii - Sonic and The Black Knight - Item Icons_170: -1186396863
+      Wii - Sonic and The Black Knight - Item Icons_171: -1207857790
+      Wii - Sonic and The Black Knight - Item Icons_172: 30044619
+      Wii - Sonic and The Black Knight - Item Icons_173: -2055441190
+      Wii - Sonic and The Black Knight - Item Icons_174: -249700281
+      Wii - Sonic and The Black Knight - Item Icons_175: 723895329
+      Wii - Sonic and The Black Knight - Item Icons_176: 2062441755
+      Wii - Sonic and The Black Knight - Item Icons_177: -1693984459
+      Wii - Sonic and The Black Knight - Item Icons_178: -295038680
+      Wii - Sonic and The Black Knight - Item Icons_179: -1679197227
+      Wii - Sonic and The Black Knight - Item Icons_18: 1447945880
+      Wii - Sonic and The Black Knight - Item Icons_180: 18170640
+      Wii - Sonic and The Black Knight - Item Icons_181: -1479918557
+      Wii - Sonic and The Black Knight - Item Icons_182: -1465623620
+      Wii - Sonic and The Black Knight - Item Icons_183: -1531587658
+      Wii - Sonic and The Black Knight - Item Icons_184: -1942736327
+      Wii - Sonic and The Black Knight - Item Icons_185: -714361855
+      Wii - Sonic and The Black Knight - Item Icons_186: -1460214401
+      Wii - Sonic and The Black Knight - Item Icons_187: -1891305924
+      Wii - Sonic and The Black Knight - Item Icons_188: -2051827846
+      Wii - Sonic and The Black Knight - Item Icons_189: 1387402029
+      Wii - Sonic and The Black Knight - Item Icons_19: 936658915
+      Wii - Sonic and The Black Knight - Item Icons_190: -1731916854
+      Wii - Sonic and The Black Knight - Item Icons_191: -1417937936
+      Wii - Sonic and The Black Knight - Item Icons_192: 1977628531
+      Wii - Sonic and The Black Knight - Item Icons_193: 785024451
+      Wii - Sonic and The Black Knight - Item Icons_194: -991283603
+      Wii - Sonic and The Black Knight - Item Icons_195: 1971468660
+      Wii - Sonic and The Black Knight - Item Icons_196: -949472553
+      Wii - Sonic and The Black Knight - Item Icons_197: 1238161970
+      Wii - Sonic and The Black Knight - Item Icons_198: 1081826616
+      Wii - Sonic and The Black Knight - Item Icons_199: 582401388
+      Wii - Sonic and The Black Knight - Item Icons_2: 725031551
+      Wii - Sonic and The Black Knight - Item Icons_20: -427676718
+      Wii - Sonic and The Black Knight - Item Icons_200: 878379993
+      Wii - Sonic and The Black Knight - Item Icons_201: -1066607390
+      Wii - Sonic and The Black Knight - Item Icons_202: 1070282300
+      Wii - Sonic and The Black Knight - Item Icons_203: -824141385
+      Wii - Sonic and The Black Knight - Item Icons_204: -1814184791
+      Wii - Sonic and The Black Knight - Item Icons_205: -638752334
+      Wii - Sonic and The Black Knight - Item Icons_206: -1914145927
+      Wii - Sonic and The Black Knight - Item Icons_207: 560269065
+      Wii - Sonic and The Black Knight - Item Icons_208: 1094560927
+      Wii - Sonic and The Black Knight - Item Icons_209: -909627593
+      Wii - Sonic and The Black Knight - Item Icons_21: 700753675
+      Wii - Sonic and The Black Knight - Item Icons_210: -1656197473
+      Wii - Sonic and The Black Knight - Item Icons_211: -9259198
+      Wii - Sonic and The Black Knight - Item Icons_212: 976208002
+      Wii - Sonic and The Black Knight - Item Icons_213: -1262391250
+      Wii - Sonic and The Black Knight - Item Icons_214: 1883517109
+      Wii - Sonic and The Black Knight - Item Icons_215: -1094887297
+      Wii - Sonic and The Black Knight - Item Icons_216: -106828500
+      Wii - Sonic and The Black Knight - Item Icons_217: 1250828685
+      Wii - Sonic and The Black Knight - Item Icons_218: -698424676
+      Wii - Sonic and The Black Knight - Item Icons_219: 1612275164
+      Wii - Sonic and The Black Knight - Item Icons_22: -292261465
+      Wii - Sonic and The Black Knight - Item Icons_220: 1791409892
+      Wii - Sonic and The Black Knight - Item Icons_221: 996339874
+      Wii - Sonic and The Black Knight - Item Icons_222: 1959465317
+      Wii - Sonic and The Black Knight - Item Icons_223: -1718412777
+      Wii - Sonic and The Black Knight - Item Icons_224: -766162013
+      Wii - Sonic and The Black Knight - Item Icons_225: -207163871
+      Wii - Sonic and The Black Knight - Item Icons_226: 961839888
+      Wii - Sonic and The Black Knight - Item Icons_227: -1038579907
+      Wii - Sonic and The Black Knight - Item Icons_228: 1883947249
+      Wii - Sonic and The Black Knight - Item Icons_229: 2131325631
+      Wii - Sonic and The Black Knight - Item Icons_23: 15931168
+      Wii - Sonic and The Black Knight - Item Icons_230: 1342449283
+      Wii - Sonic and The Black Knight - Item Icons_231: -366006076
+      Wii - Sonic and The Black Knight - Item Icons_232: 1488549857
+      Wii - Sonic and The Black Knight - Item Icons_233: 669638556
+      Wii - Sonic and The Black Knight - Item Icons_234: -704284264
+      Wii - Sonic and The Black Knight - Item Icons_235: 1215301366
+      Wii - Sonic and The Black Knight - Item Icons_236: 245427067
+      Wii - Sonic and The Black Knight - Item Icons_237: -1097339417
+      Wii - Sonic and The Black Knight - Item Icons_238: -497131980
+      Wii - Sonic and The Black Knight - Item Icons_239: -1380204679
+      Wii - Sonic and The Black Knight - Item Icons_24: 184693224
+      Wii - Sonic and The Black Knight - Item Icons_240: -182023350
+      Wii - Sonic and The Black Knight - Item Icons_241: -1968926501
+      Wii - Sonic and The Black Knight - Item Icons_242: 972549139
+      Wii - Sonic and The Black Knight - Item Icons_243: -2111212085
+      Wii - Sonic and The Black Knight - Item Icons_244: -574502756
+      Wii - Sonic and The Black Knight - Item Icons_245: -1725244321
+      Wii - Sonic and The Black Knight - Item Icons_246: 1770037240
+      Wii - Sonic and The Black Knight - Item Icons_247: -1739333873
+      Wii - Sonic and The Black Knight - Item Icons_248: -855418858
+      Wii - Sonic and The Black Knight - Item Icons_25: -373575861
+      Wii - Sonic and The Black Knight - Item Icons_26: 90898555
+      Wii - Sonic and The Black Knight - Item Icons_27: -366570013
+      Wii - Sonic and The Black Knight - Item Icons_28: -1550853997
+      Wii - Sonic and The Black Knight - Item Icons_29: 1931391902
+      Wii - Sonic and The Black Knight - Item Icons_3: -1095530355
+      Wii - Sonic and The Black Knight - Item Icons_30: 155152906
+      Wii - Sonic and The Black Knight - Item Icons_31: 1408502140
+      Wii - Sonic and The Black Knight - Item Icons_32: 181906863
+      Wii - Sonic and The Black Knight - Item Icons_33: 1821305125
+      Wii - Sonic and The Black Knight - Item Icons_34: 1354235610
+      Wii - Sonic and The Black Knight - Item Icons_35: -1806293901
+      Wii - Sonic and The Black Knight - Item Icons_36: -2036936616
+      Wii - Sonic and The Black Knight - Item Icons_37: 100583181
+      Wii - Sonic and The Black Knight - Item Icons_38: 1905274154
+      Wii - Sonic and The Black Knight - Item Icons_39: 1158104894
+      Wii - Sonic and The Black Knight - Item Icons_4: -1794384378
+      Wii - Sonic and The Black Knight - Item Icons_40: 2065317793
+      Wii - Sonic and The Black Knight - Item Icons_41: 130167921
+      Wii - Sonic and The Black Knight - Item Icons_42: 1964711042
+      Wii - Sonic and The Black Knight - Item Icons_43: 992496340
+      Wii - Sonic and The Black Knight - Item Icons_44: 1374728821
+      Wii - Sonic and The Black Knight - Item Icons_45: 1128129937
+      Wii - Sonic and The Black Knight - Item Icons_46: -1850240665
+      Wii - Sonic and The Black Knight - Item Icons_47: -2124623363
+      Wii - Sonic and The Black Knight - Item Icons_48: -12177061
+      Wii - Sonic and The Black Knight - Item Icons_49: -922042811
+      Wii - Sonic and The Black Knight - Item Icons_5: -2109142157
+      Wii - Sonic and The Black Knight - Item Icons_50: -1471387918
+      Wii - Sonic and The Black Knight - Item Icons_51: -878055422
+      Wii - Sonic and The Black Knight - Item Icons_52: -762363542
+      Wii - Sonic and The Black Knight - Item Icons_53: 888285739
+      Wii - Sonic and The Black Knight - Item Icons_54: -286311835
+      Wii - Sonic and The Black Knight - Item Icons_55: 1292015884
+      Wii - Sonic and The Black Knight - Item Icons_56: 1756078464
+      Wii - Sonic and The Black Knight - Item Icons_57: 1448921308
+      Wii - Sonic and The Black Knight - Item Icons_58: -1602882948
+      Wii - Sonic and The Black Knight - Item Icons_59: 528846322
+      Wii - Sonic and The Black Knight - Item Icons_6: 1152398185
+      Wii - Sonic and The Black Knight - Item Icons_60: -886837644
+      Wii - Sonic and The Black Knight - Item Icons_61: 1231263817
+      Wii - Sonic and The Black Knight - Item Icons_62: -389580826
+      Wii - Sonic and The Black Knight - Item Icons_63: 228963887
+      Wii - Sonic and The Black Knight - Item Icons_64: -1028610494
+      Wii - Sonic and The Black Knight - Item Icons_65: -1073536018
+      Wii - Sonic and The Black Knight - Item Icons_66: 1559907271
+      Wii - Sonic and The Black Knight - Item Icons_67: -2109413814
+      Wii - Sonic and The Black Knight - Item Icons_68: -683124491
+      Wii - Sonic and The Black Knight - Item Icons_69: 286862127
+      Wii - Sonic and The Black Knight - Item Icons_7: 607987526
+      Wii - Sonic and The Black Knight - Item Icons_70: -134710823
+      Wii - Sonic and The Black Knight - Item Icons_71: -678759206
+      Wii - Sonic and The Black Knight - Item Icons_72: -1138188797
+      Wii - Sonic and The Black Knight - Item Icons_73: -1574644965
+      Wii - Sonic and The Black Knight - Item Icons_74: -1722755298
+      Wii - Sonic and The Black Knight - Item Icons_75: 1575697718
+      Wii - Sonic and The Black Knight - Item Icons_76: 1280814527
+      Wii - Sonic and The Black Knight - Item Icons_77: 9155801
+      Wii - Sonic and The Black Knight - Item Icons_78: -2107798358
+      Wii - Sonic and The Black Knight - Item Icons_79: -564177541
+      Wii - Sonic and The Black Knight - Item Icons_8: 1166444604
+      Wii - Sonic and The Black Knight - Item Icons_80: -50517811
+      Wii - Sonic and The Black Knight - Item Icons_81: -718554220
+      Wii - Sonic and The Black Knight - Item Icons_82: 16958567
+      Wii - Sonic and The Black Knight - Item Icons_83: -368996668
+      Wii - Sonic and The Black Knight - Item Icons_84: 1404330613
+      Wii - Sonic and The Black Knight - Item Icons_85: -1826875621
+      Wii - Sonic and The Black Knight - Item Icons_86: 586085166
+      Wii - Sonic and The Black Knight - Item Icons_87: 156559256
+      Wii - Sonic and The Black Knight - Item Icons_88: -451050028
+      Wii - Sonic and The Black Knight - Item Icons_89: -1024952335
+      Wii - Sonic and The Black Knight - Item Icons_9: 1791480646
+      Wii - Sonic and The Black Knight - Item Icons_90: -1556097876
+      Wii - Sonic and The Black Knight - Item Icons_91: 274703132
+      Wii - Sonic and The Black Knight - Item Icons_92: 1908164758
+      Wii - Sonic and The Black Knight - Item Icons_93: -423035215
+      Wii - Sonic and The Black Knight - Item Icons_94: 1968606487
+      Wii - Sonic and The Black Knight - Item Icons_95: 1072812736
+      Wii - Sonic and The Black Knight - Item Icons_96: -256661414
+      Wii - Sonic and The Black Knight - Item Icons_97: -597923302
+      Wii - Sonic and The Black Knight - Item Icons_98: -1301183300
+      Wii - Sonic and The Black Knight - Item Icons_99: -1537427520
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
