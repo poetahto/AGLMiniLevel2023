@@ -11,41 +11,49 @@ namespace DefaultNamespace
         private float lifetime = 10.0f;
 
         private float _remainingTime;
-        private Vector3[] _originalScales;
-        private Vector3[] _originalPositions;
+        private Vector3[] _originalMeshScales;
+        private Vector3[] _originalPhysicsPositions;
+        private Quaternion[] _originalPhysicsRotations;
+        private MeshRenderer[] _meshRenderers;
+        private Rigidbody[] _rigidbodies;
         private bool _isActive;
 
         public event Action OnLifetimeEnd;
 
         private void Awake()
         {
-            Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
-            _originalPositions = new Vector3[rigidbodies.Length];
-            _originalScales = new Vector3[rigidbodies.Length];
+            _rigidbodies = GetComponentsInChildren<Rigidbody>();
+            _meshRenderers = GetComponentsInChildren<MeshRenderer>();
+            _originalPhysicsPositions = new Vector3[_rigidbodies.Length];
+            _originalMeshScales = new Vector3[_rigidbodies.Length];
+            _originalPhysicsRotations = new Quaternion[_meshRenderers.Length];
 
-            for (int i = 0; i < rigidbodies.Length; i++)
+            for (int i = 0; i < _rigidbodies.Length; i++)
             {
-                _originalPositions[i] = rigidbodies[i].transform.localPosition;
-                _originalScales[i] = rigidbodies[i].transform.localScale;
+                _originalPhysicsPositions[i] = _rigidbodies[i].transform.localPosition;
+                _originalPhysicsRotations[i] = _rigidbodies[i].transform.localRotation;
             }
+
+            for (int i = 0; i < _meshRenderers.Length; i++)
+                _originalMeshScales[i] = _meshRenderers[i].transform.localScale;
         }
 
-        public void Initialize(Vector3 velocity)
+        public void StartPlaying(Vector3 velocity)
         {
             gameObject.SetActive(true);
             _remainingTime = lifetime;
             _isActive = true;
 
-            Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
-
-            for (int i = 0; i < rigidbodies.Length; i++)
+            for (int i = 0; i < _rigidbodies.Length; i++)
             {
-                Rigidbody rb = rigidbodies[i];
+                Rigidbody rb = _rigidbodies[i];
                 rb.angularVelocity = Vector3.zero;
                 rb.velocity = velocity;
-                rb.transform.localScale = _originalScales[i];
-                rb.transform.localPosition = _originalPositions[i];
+                rb.transform.SetLocalPositionAndRotation(_originalPhysicsPositions[i], _originalPhysicsRotations[i]);
             }
+
+            for (int i = 0; i < _meshRenderers.Length; i++)
+                _meshRenderers[i].transform.localScale = _originalMeshScales[i];
         }
 
         private void Update()
@@ -53,10 +61,10 @@ namespace DefaultNamespace
             if (_isActive)
             {
                 _remainingTime -= Time.deltaTime;
-                Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
+                float t = (lifetime - _remainingTime) / lifetime;
 
-                for (int i = 0; i < rigidbodies.Length; i++)
-                    rigidbodies[i].transform.localScale = Vector3.Lerp(_originalScales[i], Vector3.zero, (lifetime - _remainingTime) / lifetime);
+                for (int i = 0; i < _meshRenderers.Length; i++)
+                    _meshRenderers[i].transform.localScale = Vector3.Lerp(_originalMeshScales[i], Vector3.zero, t);
 
                 if (_remainingTime <= 0)
                 {

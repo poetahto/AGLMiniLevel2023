@@ -10,7 +10,6 @@ namespace DefaultNamespace
         [SerializeField]
         private Asteroid asteroidPrefab;
 
-        // todo: move debris pool in here?
         private ObjectPool<Asteroid> _asteroidPool;
 
         private void Start()

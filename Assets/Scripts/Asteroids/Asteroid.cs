@@ -29,6 +29,7 @@ namespace DefaultNamespace
 
         private void Start()
         {
+            // todo: I'll occasionally get errors in the pooling that propagate through here - I think something is releasing twice
             debrisView.OnLifetimeEnd += () =>
             {
                 OnLifetimeEnd?.Invoke();
@@ -50,7 +51,7 @@ namespace DefaultNamespace
                 particleEffect.Play();
                 splineAnimate.Pause();
                 intactView.SetActive(false);
-                debrisView.Initialize(velocity);
+                debrisView.StartPlaying(velocity);
             }
         }
     }

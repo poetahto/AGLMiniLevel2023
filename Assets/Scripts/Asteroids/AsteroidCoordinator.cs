@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Pool;
 using Random = UnityEngine.Random;
 
 namespace DefaultNamespace
@@ -25,13 +26,26 @@ namespace DefaultNamespace
         [SerializeField]
         private AsteroidLauncher[] launchers;
 
+        [SerializeField]
+        private AsteroidPath pathPrefab;
+
         private int _launcherIndex;
         private float _timeSinceSpawn;
         private GameState _gameState;
+        private ObjectPool<AsteroidPath> _pathPool;
 
         private void Start()
         {
             _gameState = FindAnyObjectByType<GameState>();
+
+            var pathPoolParent = new GameObject("Path Pool");
+
+            _pathPool = new ObjectPool<AsteroidPath>(() =>
+            {
+                AsteroidPath instance = Instantiate(pathPrefab, pathPoolParent.transform);
+                instance.OnLifetimeEnd += () => _pathPool.Release(instance);
+                return instance;
+            });
         }
 
         private void Update()
@@ -43,8 +57,11 @@ namespace DefaultNamespace
                 if (_timeSinceSpawn > 60.0f / spawnRate)
                 {
                     Asteroid asteroid = SpawnRandomAsteroid();
+                    asteroid.IntactView.SetActive(true);
                     _launcherIndex = (_launcherIndex + 1) % launchers.Length;
-                    launchers[_launcherIndex].LaunchAsteroid(asteroid, playerInstance.transform);
+                    AsteroidPath asteroidPath = _pathPool.Get();
+                    asteroidPath.Spline.Clear();
+                    launchers[_launcherIndex].LaunchAsteroid(asteroidPath, asteroid, playerInstance.transform);
                     _timeSinceSpawn = 0;
                 }
             }

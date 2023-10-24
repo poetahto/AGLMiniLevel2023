@@ -1,13 +1,8 @@
 ﻿# todo
 
-## general
-- housekeeping: clean up folders + loose files
-
 ## asteroid spawner
 
 **VITAL**
-- test with spawning different asteroids
-- spawn chances for diff asteroids
 - make sure we can tweak the spawn rate, chances
   and other difficulty settings over time ect.
 

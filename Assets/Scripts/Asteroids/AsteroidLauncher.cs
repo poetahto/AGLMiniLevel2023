@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Pool;
 using UnityEngine.Splines;
 using Random = UnityEngine.Random;
 
@@ -9,9 +8,6 @@ namespace DefaultNamespace
     // Needs one for each planet / place things should spawn.
     public class AsteroidLauncher : MonoBehaviour
     {
-        [SerializeField]
-        private AsteroidPath pathPrefab;
-
         [SerializeField]
         private Transform[] targetPositions;
 
@@ -26,10 +22,9 @@ namespace DefaultNamespace
         [SerializeField]
         private Transform strikingVisualizer;
 
-        private ObjectPool<AsteroidPath> _pathPool;
         private GameState _gameState;
 
-        public void LaunchAsteroid(Asteroid asteroid, Transform target)
+        public void LaunchAsteroid(AsteroidPath path, Asteroid asteroid, Transform target)
         {
             Debug.Log("Spawned an asteroid.");
 
@@ -38,16 +33,13 @@ namespace DefaultNamespace
             Transform randomTarget = targetPositions[randomIndex];
 
             // Create the mover that drives asteroid paths
-            AsteroidPath asteroidPath = _pathPool.Get();
-            asteroidPath.Spline.Clear();
-            Spline spline = asteroidPath.Spline;
+            Spline spline = path.Spline;
             spline.Add(new BezierKnot(transform.position), TangentMode.AutoSmooth, 1);
             spline.Add(new BezierKnot(randomTarget.position), TangentMode.AutoSmooth, 1);
-            asteroidPath.Initialize(target, strikingRange, impactTime + 1);
+            path.Initialize(target, strikingRange, impactTime + 1);
 
             // Create the asteroid itself, and assign it to follow the path
-            asteroid.IntactView.SetActive(true);
-            asteroid.SplineAnimate.Container = asteroidPath.Container;
+            asteroid.SplineAnimate.Container = path.Container;
             asteroid.SplineAnimate.Duration = impactTime;
             asteroid.SplineAnimate.Restart(true);
         }
@@ -60,14 +52,6 @@ namespace DefaultNamespace
         private void Start()
         {
             _gameState = FindAnyObjectByType<GameState>();
-
-            var pathPoolParent = new GameObject("Path Pool");
-            _pathPool = new ObjectPool<AsteroidPath>(() =>
-            {
-                AsteroidPath instance = Instantiate(pathPrefab, pathPoolParent.transform);
-                instance.OnLifetimeEnd += () => _pathPool.Release(instance);
-                return instance;
-            });
         }
 
         private void Update()
