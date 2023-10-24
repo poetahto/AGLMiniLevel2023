@@ -10,17 +10,22 @@ using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
 
 
+[RequireComponent(typeof(Selector))]
 public class PlayerInventoryController : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private InputHandler m_actionAsset;
     [SerializeField] private Inventory m_inventory;
+    
     public Inventory PlayerInventory => m_inventory;
 
     private InventoryUIController m_ui;
+    private Selector m_selector;
 
     private void Awake()
     {
         m_ui = GetComponentInChildren<InventoryUIController>();
+        m_selector = GetComponent<Selector>();
     }
 
     private void Update()
@@ -33,23 +38,35 @@ public class PlayerInventoryController : MonoBehaviour
             Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked) ? CursorLockMode.None : CursorLockMode.Locked;
         }
 
-        var collectables = Physics.OverlapSphere(transform.position, 5f).Where(c => c.TryGetComponent(out ICollectable o)).ToList();
+        // var collectables = Physics.OverlapSphere(transform.position, m_detectionRange)
+        //     .Where(c => c.TryGetComponent(out ICollectable o)).ToList();
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
-            if (collectables.Count == 0) return;
+            var collectable = m_selector.GetCollectables().FirstOrDefault();
+            if (collectable == null) return;
             
-            if (collectables[0].TryGetComponent(out ICollectable c))
-            {
-                c.Collect(m_inventory);
-            }
+            StartCoroutine(Collect(m_selector.GetCollectableTransform(collectable), collectable, 1f));
         }
     }
 
-    private void OnDrawGizmos()
+    private IEnumerator Collect(Transform t, ICollectable c, float time)
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, 5f);
+        var scale = t.localScale;
+        var position = t.position;
+
+        float tt = 0;
+        while (tt < time)
+        {
+            yield return null;
+            t.localScale = Vector3.Lerp(scale, Vector3.zero, tt);
+            t.position = Vector3.Lerp(position, transform.position, tt);
+            tt += Time.deltaTime;
+        }
+        
+        c.Collect(m_inventory);
+
+        yield return null;
     }
 }
 
