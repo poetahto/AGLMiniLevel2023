@@ -572,10 +572,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 30
   weightedFactories:
-  - factory: {fileID: 805346921}
-    spawnChance: 0.75
-  - factory: {fileID: 165770422}
-    spawnChance: 0.25
+  - item: {fileID: 805346921}
+    probability: 0.75
+  - item: {fileID: 165770422}
+    probability: 0.25
   launchers:
   - {fileID: 1240773669}
   - {fileID: 144531096}

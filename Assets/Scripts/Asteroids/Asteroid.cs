@@ -7,6 +7,22 @@ namespace DefaultNamespace
     // Some object that can fall from the sky and crash into the ground.
     public class Asteroid : MonoBehaviour
     {
+        // todo: impl
+        [SerializeField]
+        private WeightedItem<GameObject> itemDropTable;
+
+        // todo: impl
+        [SerializeField]
+        private AudioSource crashAudio;
+
+        // todo: impl
+        [SerializeField]
+        private float damage = 1;
+
+        // todo: impl
+        [SerializeField]
+        private GameObject warningView;
+
         [SerializeField]
         private ParticleSystem particleEffect;
 
@@ -27,13 +43,20 @@ namespace DefaultNamespace
 
         public event Action OnLifetimeEnd;
 
-        private void Start()
+        private void HandleDebrisEnd()
         {
             // todo: I'll occasionally get errors in the pooling that propagate through here - I think something is releasing twice
-            debrisView.OnLifetimeEnd += () =>
-            {
-                OnLifetimeEnd?.Invoke();
-            };
+            OnLifetimeEnd?.Invoke();
+        }
+
+        private void OnEnable()
+        {
+            debrisView.OnLifetimeEnd += HandleDebrisEnd;
+        }
+
+        private void OnDisable()
+        {
+            debrisView.OnLifetimeEnd -= HandleDebrisEnd;
         }
 
         private void Update()

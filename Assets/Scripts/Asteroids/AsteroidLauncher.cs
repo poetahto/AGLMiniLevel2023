@@ -11,6 +11,7 @@ namespace DefaultNamespace
         [SerializeField]
         private Transform[] targetPositions;
 
+        // todo: this goes w/ asteroid, not launcher
         [SerializeField]
         [Tooltip("How long it takes an asteroid to strike the surface")]
         private float impactTime = 5;

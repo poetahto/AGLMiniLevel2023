@@ -1,7 +1,5 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Pool;
-using Random = UnityEngine.Random;
 
 namespace DefaultNamespace
 {
@@ -9,19 +7,12 @@ namespace DefaultNamespace
     // Only one of these should ever exist (probably)
     public class AsteroidCoordinator : MonoBehaviour
     {
-        [Serializable]
-        public class WeightedAsteroidFactory
-        {
-            public AsteroidFactory factory;
-            public float spawnChance;
-        }
-
         [SerializeField]
         [Tooltip("How quickly the asteroids spawn, in asteroids-per-minute")]
         private float spawnRate = 10.0f;
 
         [SerializeField]
-        private WeightedAsteroidFactory[] weightedFactories;
+        private WeightedItem<AsteroidFactory>[] weightedFactories;
 
         [SerializeField]
         private AsteroidLauncher[] launchers;
@@ -69,28 +60,7 @@ namespace DefaultNamespace
 
         private Asteroid SpawnRandomAsteroid()
         {
-            float total = 0;
-
-            foreach (WeightedAsteroidFactory weightedFactory in weightedFactories)
-                total += weightedFactory.spawnChance;
-
-            float randomPoint = Random.value * total;
-            AsteroidFactory selectedFactory = weightedFactories[0].factory;
-
-            for (int i = 0; i < weightedFactories.Length; i++)
-            {
-                int swapIndex = Random.Range(0, weightedFactories.Length);
-                (weightedFactories[i], weightedFactories[swapIndex]) = (weightedFactories[swapIndex], weightedFactories[i]);
-            }
-
-            foreach (WeightedAsteroidFactory weightedPrefab in weightedFactories)
-            {
-                if (randomPoint < weightedPrefab.spawnChance)
-                    selectedFactory = weightedPrefab.factory;
-
-                else randomPoint -= weightedPrefab.spawnChance;
-            }
-
+            AsteroidFactory selectedFactory = weightedFactories.GetRandom();
             return selectedFactory.SpawnAsteroid();
         }
     }
