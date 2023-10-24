@@ -22,6 +22,8 @@ namespace InventorySystem
         private VisualElement m_root;
         private VisualElement m_slotContainer;
 
+        public bool IsDisplaying { get; private set; }
+
         private void Awake()
         {
             m_root = GetComponent<UIDocument>().rootVisualElement;
@@ -40,7 +42,7 @@ namespace InventorySystem
             
             InitInventoryUI();
 
-            m_root.style.display = DisplayStyle.None;
+            Display(false);
         }
         
         private void OnEnable()
@@ -173,6 +175,12 @@ namespace InventorySystem
             m_ghostIcon.style.backgroundImage = _origin.Item.Data.Icon.texture;
 
             m_ghostIcon.style.visibility = Visibility.Visible;
+        }
+
+        public void Display(bool _arg)
+        {
+            IsDisplaying = _arg;
+            m_root.style.display = _arg ? DisplayStyle.Flex : DisplayStyle.None;
         }
     }
 }

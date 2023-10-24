@@ -7,7 +7,7 @@
 
 .inventory {
     flex-grow: 1;
-    background-color: rgb(28, 32, 36);
+    background-color: rgba(28, 32, 36, 0.67);
     width: 50%;
     height: 100%;
     max-width: 50%;

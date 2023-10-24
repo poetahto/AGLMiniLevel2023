@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using InventorySystem.Utilities;
 using UnityEngine;
 
 namespace InventorySystem
@@ -17,10 +18,9 @@ namespace InventorySystem
     {
         public event Action<InventoryItem, InventoryChangeType> OnInventoryChanged;
 
-        private readonly Dictionary<ItemData, InventoryItem> m_itemDictionary = new();
-
         [SerializeField] private int m_maxCapacity;
-        [SerializeField] private List<InventoryItem> InventoryItems = new();
+        
+        private readonly List<InventoryItem> InventoryItems = new();
 
         private int m_index = -1;
         public InventoryItem Current => InventoryItems[m_index];
@@ -30,38 +30,36 @@ namespace InventorySystem
         public int MaxCapacity => m_maxCapacity;
         
         public InventoryItem GetItem(ItemData _data) =>
-            m_itemDictionary.FirstOrDefault(item => item.Key == _data).Value;
+            InventoryItems.FirstOrDefault(item => item.Data == _data);
 
-        public bool Contains(ItemData _data) => m_itemDictionary.ContainsKey(_data);
+        public bool Contains(ItemData _data) => InventoryItems.FirstOrDefault(item => item.Data == _data) != null;
 
         public void Add(ItemData _data)
         {
-            if (m_itemDictionary.TryGetValue(_data, out var value))
+            if (InventoryItems.TryGet(_data, out var value))
             {
                 value.IncreaseStack();
+                OnInventoryChanged?.Invoke(value, InventoryChangeType.PickUp);
             }
             else
             {
                 var item = new InventoryItem(_data);
                 InventoryItems.Add(item);
-                m_itemDictionary.Add(_data, item);
+                OnInventoryChanged?.Invoke(item, InventoryChangeType.PickUp);
             }
-
-            OnInventoryChanged?.Invoke(m_itemDictionary[_data], InventoryChangeType.PickUp);
         }
 
         public void Remove(ItemData _data)
         {
-            if (!m_itemDictionary.TryGetValue(_data, out var value)) return;
+            if (!InventoryItems.TryGet(_data, out var value)) return;
 
             value.DecreaseStack();
 
-            OnInventoryChanged?.Invoke(m_itemDictionary[_data], InventoryChangeType.Drop);
+            OnInventoryChanged?.Invoke(value, InventoryChangeType.Drop);
             
             if (value.StackSize != 0) return;
             
             InventoryItems.Remove(value);
-            m_itemDictionary.Remove(_data);
         }
 
         public IEnumerator<InventoryItem> GetEnumerator()

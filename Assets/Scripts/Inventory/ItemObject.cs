@@ -13,7 +13,7 @@ namespace InventorySystem
         public InventoryItem Collect(Inventory _inventory)
         {
             _inventory.Add(m_data);
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
             return _inventory.GetItem(m_data);
         }
     }

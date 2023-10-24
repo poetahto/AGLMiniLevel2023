@@ -142,7 +142,7 @@ namespace AGL.Player
             if (m_target != null)
             {
                 Gizmos.color = Color.red;
-                Gizmos.DrawLine(m_target.position, m_target.up * 10f);
+                Gizmos.DrawLine(m_target.position, targetLookPosition);
             }
         }
     }
