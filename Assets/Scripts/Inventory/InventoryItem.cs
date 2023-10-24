@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace InventorySystem
 {
+    /// <summary>
+    /// A wrapper around the ItemData scriptableObject class and it represents an item within an inventory.
+    /// It holds the data of the item it wraps an the stack size of the item (how many items of this type are in the inventory).
+    /// </summary>
     [Serializable]
     public class InventoryItem
     {

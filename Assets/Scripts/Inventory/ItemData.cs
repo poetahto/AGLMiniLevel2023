@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace InventorySystem
 {
+    /// <summary>
+    /// Holds basic information about an item.
+    /// </summary>
     [Serializable]
     [CreateAssetMenu(menuName = "Inventory System/Items/ItemData", fileName = "ItemData")]
     public class ItemData : ScriptableObject
