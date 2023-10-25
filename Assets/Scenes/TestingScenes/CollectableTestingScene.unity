@@ -859,7 +859,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a4b2022f148ea49a24c79ea5f441d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_requiredItems: []
+  m_requiredItems:
+  - m_shouldRemove: 0
+    m_item: {fileID: 0}
+    m_amount: 0
+  - m_shouldRemove: 0
+    m_item: {fileID: 0}
+    m_amount: 0
 --- !u!33 &1361807135655255262
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -982,7 +988,7 @@ PrefabInstance:
     - target: {fileID: 149799590957119835, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.12218325
+      value: 0.12218327
       objectReference: {fileID: 0}
     - target: {fileID: 149799590957119835, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
@@ -992,7 +998,7 @@ PrefabInstance:
     - target: {fileID: 149799590957119835, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000021023316
+      value: 0.0000000021023319
       objectReference: {fileID: 0}
     - target: {fileID: 557961786857531756, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
@@ -1221,12 +1227,12 @@ PrefabInstance:
     - target: {fileID: 8898048682270015414, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017112876
+      value: -0.000000017112876
       objectReference: {fileID: 0}
     - target: {fileID: 8898048682270015414, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000017913536
+      value: 0.0000000017913536
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

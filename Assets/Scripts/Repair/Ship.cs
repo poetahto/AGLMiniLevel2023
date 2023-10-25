@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour, IInteractable, ISelectable
 {
-    [SerializeField] private List<ItemData> m_requiredItems;
+    [SerializeField] private List<ItemRequirement> m_requiredItems;
 
     private List<ItemData> m_components;
 
