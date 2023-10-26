@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     // Static generic helper methods for some physics stuff.
     public static class PhysicsUtil

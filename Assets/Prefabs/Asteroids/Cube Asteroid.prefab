@@ -83,7 +83,7 @@ MonoBehaviour:
     probability: 0.5
   itemSpawnPosition: {x: 0, y: 0, z: 0}
   crashAudio: {fileID: 6435782886352995247}
-  damage: 1
+  damage: 10
   particleEffect: {fileID: 1307734917942707539}
   intactView: {fileID: 7279248108723187750}
   debrisView: {fileID: 2242609601973094132}

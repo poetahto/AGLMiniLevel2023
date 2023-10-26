@@ -1409,7 +1409,7 @@ MonoBehaviour:
   itemDropTable: []
   itemSpawnPosition: {x: 0, y: 0, z: 0}
   crashAudio: {fileID: 6798977640953790871}
-  damage: 1
+  damage: 5
   particleEffect: {fileID: 1307734917942707539}
   intactView: {fileID: 7279248108723187750}
   debrisView: {fileID: 2242609601973094132}

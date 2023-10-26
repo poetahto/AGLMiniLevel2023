@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     // Plays an animated effect where an asteroid breaks into small pieces.
     // The pieces grow smaller over time, until disappearing completely.

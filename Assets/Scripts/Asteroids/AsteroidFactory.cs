@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Pool;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     // Responsible for creating new asteroids. Probably is pooling behind the scenes.
     // One of these exists for each asteroid type.

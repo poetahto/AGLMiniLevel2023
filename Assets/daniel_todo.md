@@ -1,18 +1,16 @@
 ﻿# todo
 
-## asteroid spawner
-
-**VITAL**
-- make sure we can tweak the spawn rate, chances
-  and other difficulty settings over time ect.
+## health / suit
 
 **NICE-TO-HAVE**
-- instead of the random spawn points, random spawn splines / continuous thing?
+- screen-shake
+- sfx
+- leaky suit particles + sfx
+- half-life warnings
+- dynamic post-processing
+- hit flash or animations
 
 ## asteroids
-
-**VITAL**
-- integration for dealing damage
 
 **NICE-TO-HAVE**
 - warning target for their impact location (small, grow bigger as approach)
