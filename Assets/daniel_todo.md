@@ -1,14 +1,24 @@
 ﻿# todo
 
 ## health / suit
+
+**VITAL**
 - oxygen when you hit zero, die
-- suit integrity (correlates to higher oxygen drain)
-- UI views for seeing what current integrity and health is at
+- game state
+
+**NICE-TO-HAVE**
+- screen-shake
+- sfx
+- leaky suit particles + sfx
+- half-life warnings
+- dynamic post-processing
+- hit flash or animations
 
 ## asteroids
 
 **VITAL**
 - integration for dealing damage
+- asteroid spawning targeting bugs out on tight ranges
 
 **NICE-TO-HAVE**
 - warning target for their impact location (small, grow bigger as approach)

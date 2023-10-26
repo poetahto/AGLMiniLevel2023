@@ -1,6 +1,8 @@
 ﻿using System;
+using AGL.Misc;
 using UnityEngine;
 using UnityEngine.Splines;
+using Random = UnityEngine.Random;
 
 namespace AGL.Asteroids
 {
@@ -16,9 +18,11 @@ namespace AGL.Asteroids
         [SerializeField]
         private AudioSource crashAudio;
 
-        // todo: impl
         [SerializeField]
-        private float damage = 1;
+        private float maxDamage = 20;
+
+        [SerializeField]
+        private float minDamage = 10;
 
         [SerializeField]
         private ParticleSystem particleEffect;
@@ -78,6 +82,12 @@ namespace AGL.Asteroids
                 // At some point, we might want to move this into a factory for possible pooling.
                 if (itemDropTable.TryGetRandom(out GameObject randomItemPrefab) && _itemDropManager.ShouldDrop(randomItemPrefab))
                     Instantiate(randomItemPrefab, transform.position + itemSpawnPosition, Quaternion.identity);
+
+                if (other.TryGetComponentOnRoot(out IDamageable damageable))
+                {
+                    float damage = Random.Range(minDamage, maxDamage);
+                    damageable.Damage(new DamageEvent{Amount = damage});
+                }
 
                 print("explode");
                 particleEffect.Play();
