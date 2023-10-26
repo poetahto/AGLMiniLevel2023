@@ -421,6 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 174252741}
+  deathTime: 3
 --- !u!114 &174252741
 MonoBehaviour:
   m_ObjectHideFlags: 0
