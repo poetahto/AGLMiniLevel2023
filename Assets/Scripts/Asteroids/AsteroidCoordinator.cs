@@ -1,21 +1,28 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Pool;
 
 namespace DefaultNamespace
 {
+    [Serializable]
+    public class AsteroidSpawnSettings
+    {
+        [Tooltip("How quickly the asteroids spawn, in asteroids-per-minute")]
+        public float spawnRate;
+
+        [Tooltip("The types of asteroids that can spawn.")]
+        public WeightedItem<AsteroidFactory>[] weightedFactories;
+
+        [Tooltip("The potential spawn positions for each asteroid.")]
+        public AsteroidLauncher[] launchers;
+    }
+
     // Responsible for the timing of asteroid spawners.
     // Only one of these should ever exist (probably)
     public class AsteroidCoordinator : MonoBehaviour
     {
         [SerializeField]
-        [Tooltip("How quickly the asteroids spawn, in asteroids-per-minute")]
-        private float spawnRate = 10.0f;
-
-        [SerializeField]
-        private WeightedItem<AsteroidFactory>[] weightedFactories;
-
-        [SerializeField]
-        private AsteroidLauncher[] launchers;
+        private AsteroidSpawnSettings defaultSettings;
 
         [SerializeField]
         private AsteroidPath pathPrefab;
@@ -25,10 +32,16 @@ namespace DefaultNamespace
         private GameState _gameState;
         private ObjectPool<AsteroidPath> _pathPool;
 
-        private void Start()
+        public AsteroidSpawnSettings Settings { get; set; }
+
+        private void Awake()
         {
             _gameState = FindAnyObjectByType<GameState>();
+            Settings = defaultSettings;
+        }
 
+        private void Start()
+        {
             var pathPoolParent = new GameObject("Path Pool");
 
             _pathPool = new ObjectPool<AsteroidPath>(() =>
@@ -45,14 +58,14 @@ namespace DefaultNamespace
             {
                 _timeSinceSpawn += Time.deltaTime;
 
-                if (_timeSinceSpawn > 60.0f / spawnRate)
+                if (_timeSinceSpawn > 60.0f / Settings.spawnRate)
                 {
                     Asteroid asteroid = SpawnRandomAsteroid();
                     asteroid.IntactView.SetActive(true);
-                    _launcherIndex = (_launcherIndex + 1) % launchers.Length;
+                    _launcherIndex = (_launcherIndex + 1) % Settings.launchers.Length;
                     AsteroidPath asteroidPath = _pathPool.Get();
                     asteroidPath.Spline.Clear();
-                    launchers[_launcherIndex].LaunchAsteroid(asteroidPath, asteroid, playerInstance.transform);
+                    Settings.launchers[_launcherIndex].LaunchAsteroid(asteroidPath, asteroid, playerInstance.transform);
                     _timeSinceSpawn = 0;
                 }
             }
@@ -60,7 +73,7 @@ namespace DefaultNamespace
 
         private Asteroid SpawnRandomAsteroid()
         {
-            AsteroidFactory selectedFactory = weightedFactories.GetRandom();
+            AsteroidFactory selectedFactory = Settings.weightedFactories.GetRandom();
             return selectedFactory.SpawnAsteroid();
         }
     }

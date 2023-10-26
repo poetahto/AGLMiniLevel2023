@@ -570,16 +570,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24714354a44d4b249ed4f5844fab7602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRate: 30
-  weightedFactories:
-  - item: {fileID: 805346921}
-    probability: 0.75
-  - item: {fileID: 165770422}
-    probability: 0.25
-  launchers:
-  - {fileID: 1240773669}
-  - {fileID: 144531096}
-  - {fileID: 701234974}
+  defaultSettings:
+    spawnRate: 30
+    weightedFactories:
+    - item: {fileID: 805346921}
+      probability: 0.75
+    - item: {fileID: 165770422}
+      probability: 0.25
+    launchers:
+    - {fileID: 701234974}
+    - {fileID: 144531096}
+    - {fileID: 1240773669}
   pathPrefab: {fileID: 5673880889711444856, guid: 1294adeb33f307a4d82d609087cc9d16,
     type: 3}
 --- !u!4 &814497560
