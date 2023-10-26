@@ -34,6 +34,9 @@ namespace AGL.Asteroids
         private AsteroidDebris debrisView;
 
         [SerializeField]
+        private RandomSpinner spinner;
+
+        [SerializeField]
         private SplineAnimate splineAnimate;
 
         private Vector3 _previousPosition;
@@ -49,6 +52,7 @@ namespace AGL.Asteroids
         {
             // todo: I'll occasionally get errors in the pooling that propagate through here - I think something is releasing twice
             OnLifetimeEnd?.Invoke();
+            spinner.enabled = true;
         }
 
         private void OnEnable()
@@ -89,7 +93,8 @@ namespace AGL.Asteroids
                     damageable.Damage(new DamageEvent{Amount = damage});
                 }
 
-                print("explode");
+                // print($"explode with {other.name}");
+                spinner.enabled = false;
                 particleEffect.Play();
                 splineAnimate.Pause();
                 intactView.SetActive(false);
@@ -100,7 +105,7 @@ namespace AGL.Asteroids
 
         private void OnDrawGizmosSelected()
         {
-            Gizmos.DrawSphere(transform.position + itemSpawnPosition, 1);
+            Gizmos.DrawSphere(transform.position + itemSpawnPosition, 0.25f);
         }
     }
 }

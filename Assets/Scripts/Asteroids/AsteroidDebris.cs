@@ -10,7 +10,7 @@ namespace AGL.Asteroids
         [SerializeField]
         private float lifetime = 10.0f;
 
-        private float _remainingTime;
+        public float _remainingTime;
         private Vector3[] _originalMeshScales;
         private Vector3[] _originalPhysicsPositions;
         private Quaternion[] _originalPhysicsRotations;
@@ -22,11 +22,12 @@ namespace AGL.Asteroids
 
         private void Awake()
         {
-            _rigidbodies = GetComponentsInChildren<Rigidbody>();
-            _meshRenderers = GetComponentsInChildren<MeshRenderer>();
+            _meshRenderers = GetComponentsInChildren<MeshRenderer>(true);
+            _originalMeshScales = new Vector3[_meshRenderers.Length];
+
+            _rigidbodies = GetComponentsInChildren<Rigidbody>(true);
             _originalPhysicsPositions = new Vector3[_rigidbodies.Length];
-            _originalMeshScales = new Vector3[_rigidbodies.Length];
-            _originalPhysicsRotations = new Quaternion[_meshRenderers.Length];
+            _originalPhysicsRotations = new Quaternion[_rigidbodies.Length];
 
             for (int i = 0; i < _rigidbodies.Length; i++)
             {
@@ -68,10 +69,10 @@ namespace AGL.Asteroids
 
                 if (_remainingTime <= 0)
                 {
-                    OnLifetimeEnd?.Invoke();
                     gameObject.SetActive(false);
                     _isActive = false;
                     _remainingTime = 0;
+                    OnLifetimeEnd?.Invoke();
                 }
             }
         }

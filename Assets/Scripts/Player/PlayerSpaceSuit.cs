@@ -41,7 +41,6 @@ namespace AGL.Player
 
         public void Damage(DamageEvent eventData)
         {
-            print($"damaged {eventData.Amount}!");
             Integrity = Mathf.Max(Integrity - eventData.Amount, 0); // Make sure you can't go below 0 integrity.
             playerAnimator.PlayDamage();
             // todo: sfx, vfx

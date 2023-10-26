@@ -20,19 +20,16 @@ namespace AGL.Player
         public void PlayDamage()
         {
             targetAnimator.Play("Damage");
-            print("playing damage animation");
         }
 
         public void PlayDeath()
         {
             targetAnimator.Play("Death");
-            print("playing death animation");
         }
 
         public void PlayUse()
         {
             targetAnimator.Play("Use");
-            print("playing use animation");
         }
     }
 }

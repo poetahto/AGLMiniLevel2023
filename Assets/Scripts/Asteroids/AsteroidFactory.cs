@@ -18,14 +18,20 @@ namespace AGL.Asteroids
             _asteroidPool = new ObjectPool<Asteroid>(() =>
             {
                 Asteroid instance = Instantiate(asteroidPrefab, asteroidPoolParent.transform);
-                instance.OnLifetimeEnd += () => _asteroidPool.Release(instance);
+                instance.OnLifetimeEnd += () =>
+                {
+                    _asteroidPool.Release(instance);
+                    instance.gameObject.SetActive(false);
+                };
                 return instance;
             });
         }
 
         public Asteroid SpawnAsteroid()
         {
-            return _asteroidPool.Get();
+            var result = _asteroidPool.Get();
+            result.gameObject.SetActive(true);
+            return result;
         }
     }
 }

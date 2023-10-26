@@ -5157,6 +5157,7 @@ GameObject:
   - component: {fileID: 3965431245824547979}
   - component: {fileID: 5249033208242266278}
   - component: {fileID: 1740802064232610507}
+  - component: {fileID: 1020006815774664688}
   m_Layer: 0
   m_Name: Asteroid Base
   m_TagString: Untagged
@@ -5231,6 +5232,7 @@ MonoBehaviour:
   particleEffect: {fileID: 3757535640815596919}
   intactView: {fileID: 2086345973416588531}
   debrisView: {fileID: 7252296710360279306}
+  spinner: {fileID: 1020006815774664688}
   splineAnimate: {fileID: 1740802064232610507}
 --- !u!114 &1740802064232610507
 MonoBehaviour:
@@ -5251,7 +5253,20 @@ MonoBehaviour:
   m_Duration: 1
   m_MaxSpeed: 10
   m_EasingMode: 0
-  m_AlignmentMode: 1
+  m_AlignmentMode: 0
   m_ObjectForwardAxis: 2
   m_ObjectUpAxis: 1
   m_StartOffset: 0
+--- !u!114 &1020006815774664688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442551399165151471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968bf132423614c4ba1d3dfc8685cc0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 45

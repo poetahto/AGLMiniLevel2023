@@ -27,8 +27,6 @@ namespace AGL.Asteroids
 
         public void LaunchAsteroid(AsteroidPath path, Asteroid asteroid, Transform target)
         {
-            Debug.Log("Spawned an asteroid.");
-
             // Get a random target (the points around the planet)
             int randomIndex = Random.Range(0, targetPositions.Length);
             Transform randomTarget = targetPositions[randomIndex];
