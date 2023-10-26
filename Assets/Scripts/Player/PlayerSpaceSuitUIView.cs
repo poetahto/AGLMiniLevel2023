@@ -23,10 +23,10 @@ namespace AGL.Player
 
         private void Update()
         {
-            oxygenBar.fillAmount = Mathf.Lerp(oxygenBar.fillAmount, suit.OxygenPercent, 7 * Time.deltaTime);
+            oxygenBar.fillAmount = suit.OxygenPercent;
             oxygenBar.color = oxygenGradient.Evaluate(1 - suit.OxygenPercent);
 
-            suitIntegrityText.SetText($"{(int) suit.Integrity}");
+            suitIntegrityText.SetText($"{(int) suit.Integrity}%");
             suitIntegrityText.color = integrityGradient.Evaluate(1 - suit.IntegrityPercent);
         }
     }

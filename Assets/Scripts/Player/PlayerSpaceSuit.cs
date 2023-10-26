@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace AGL.Player
 {
@@ -14,10 +13,15 @@ namespace AGL.Player
         [SerializeField]
         private float maxOxygenDepletionRate;
 
-        [FormerlySerializedAs("oxygenDepletionRate")]
         [SerializeField]
         [Tooltip("How quickly oxygen leaves the suit, depending on percent integrity.")]
         private AnimationCurve oxygenDepletionScaling;
+
+        [SerializeField]
+        private PlayerDeathEffect deathEffect;
+
+        [SerializeField]
+        private PlayerAnimator playerAnimator;
 
         public float Integrity { get; set; }
         public float IntegrityMax => maxIntegrity;
@@ -39,7 +43,8 @@ namespace AGL.Player
         {
             print($"damaged {eventData.Amount}!");
             Integrity = Mathf.Max(Integrity - eventData.Amount, 0); // Make sure you can't go below 0 integrity.
-            // todo: sfx, vfx, animator
+            playerAnimator.PlayDamage();
+            // todo: sfx, vfx
         }
 
         private void Update()
@@ -49,9 +54,8 @@ namespace AGL.Player
 
             if (Oxygen == 0 && !IsDead)
             {
-                print("you died!");
                 IsDead = true;
-                // todo: you are dead - game state stuff, sfx, vfx, animator
+                deathEffect.Play();
             }
         }
     }

@@ -2,10 +2,6 @@
 
 ## health / suit
 
-**VITAL**
-- oxygen when you hit zero, die
-- game state
-
 **NICE-TO-HAVE**
 - screen-shake
 - sfx
@@ -15,10 +11,6 @@
 - hit flash or animations
 
 ## asteroids
-
-**VITAL**
-- integration for dealing damage
-- asteroid spawning targeting bugs out on tight ranges
 
 **NICE-TO-HAVE**
 - warning target for their impact location (small, grow bigger as approach)

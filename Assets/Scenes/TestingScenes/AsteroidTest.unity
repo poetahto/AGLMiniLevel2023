@@ -237,7 +237,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 91251ec86c1f5504697ec8c86677c5d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.787
+      value: 1.9114
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91251ec86c1f5504697ec8c86677c5d8,
         type: 3}
@@ -310,6 +310,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 174252738}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91251ec86c1f5504697ec8c86677c5d8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 174252740}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91251ec86c1f5504697ec8c86677c5d8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 174252741}
   m_SourcePrefab: {fileID: 100100000, guid: 91251ec86c1f5504697ec8c86677c5d8, type: 3}
 --- !u!1 &174252735 stripped
 GameObject:
@@ -377,6 +385,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  deathEffect: {fileID: 174252740}
+  playerAnimator: {fileID: 174252741}
 --- !u!65 &174252739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -398,6 +408,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2983669, y: 3.0686755, z: 1}
   m_Center: {x: 0.03281739, y: 1.0343373, z: -3.4685238e-10}
+--- !u!114 &174252740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174252735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92021199d024da081c51e1ab1886aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 174252741}
+--- !u!114 &174252741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174252735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47baafcaed0b40c195972da310ad63b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetAnimator: {fileID: 174252736}
 --- !u!1 &377322793
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,14 +520,14 @@ MonoBehaviour:
   integrityGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 0.503, g: 0.503, b: 0.503, a: 1}
+    key1: {r: 0.745283, g: 0, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
+    ctime0: 17155
     ctime1: 65535
     ctime2: 0
     ctime3: 0
@@ -3320,8 +3356,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.063, y: -12.27}
-  m_SizeDelta: {x: 73.8738, y: 50}
+  m_AnchoredPosition: {x: -4, y: -12.27}
+  m_SizeDelta: {x: 112.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1980814769
 MonoBehaviour:
@@ -3343,7 +3379,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 100%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
