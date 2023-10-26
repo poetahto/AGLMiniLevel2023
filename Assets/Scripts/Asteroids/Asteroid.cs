@@ -1,9 +1,10 @@
 ﻿using System;
+using AGL.Misc;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.Splines;
+using Random = UnityEngine.Random;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     // Some object that can fall from the sky and crash into the ground.
     public class Asteroid : MonoBehaviour
@@ -17,9 +18,11 @@ namespace DefaultNamespace
         [SerializeField]
         private AudioSource crashAudio;
 
-        // todo: impl
         [SerializeField]
-        private float damage = 1;
+        private float maxDamage = 20;
+
+        [SerializeField]
+        private float minDamage = 10;
 
         [SerializeField]
         private ParticleSystem particleEffect;
@@ -79,6 +82,12 @@ namespace DefaultNamespace
                 // At some point, we might want to move this into a factory for possible pooling.
                 if (itemDropTable.TryGetRandom(out GameObject randomItemPrefab) && _itemDropManager.ShouldDrop(randomItemPrefab))
                     Instantiate(randomItemPrefab, transform.position + itemSpawnPosition, Quaternion.identity);
+
+                if (other.TryGetComponentOnRoot(out IDamageable damageable))
+                {
+                    float damage = Random.Range(minDamage, maxDamage);
+                    damageable.Damage(new DamageEvent{Amount = damage});
+                }
 
                 print("explode");
                 particleEffect.Play();

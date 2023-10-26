@@ -2,7 +2,7 @@
 using UnityEngine.Splines;
 using Random = UnityEngine.Random;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     // Responsible for launching random asteroids when requested.
     // Needs one for each planet / place things should spawn.

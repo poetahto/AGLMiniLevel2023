@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace DefaultNamespace.Editor
+namespace AGL.Asteroids.Editor
 {
     public static class MassParenting
     {

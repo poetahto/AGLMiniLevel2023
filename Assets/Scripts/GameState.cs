@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     public class GameState : MonoBehaviour
     {
@@ -11,6 +12,19 @@ namespace DefaultNamespace
         {
             playerInstance = player;
             return player != null;
+        }
+
+        public void LoadVictoryScene()
+        {
+            // todo: implement
+            print("you won!");
+        }
+
+        public void RestartGame()
+        {
+            // todo: transition screen, maybe prompt to press "restart"?
+            print("restarting game");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

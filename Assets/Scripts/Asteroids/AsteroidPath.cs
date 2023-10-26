@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Splines;
 using Random = UnityEngine.Random;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     public class AsteroidPath : MonoBehaviour
     {
