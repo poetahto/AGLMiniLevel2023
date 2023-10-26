@@ -1,9 +1,8 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.Splines;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     // Some object that can fall from the sky and crash into the ground.
     public class Asteroid : MonoBehaviour

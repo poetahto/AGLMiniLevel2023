@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     [Serializable]
     public class AsteroidSpawnSettings

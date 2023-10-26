@@ -1,13 +1,9 @@
 ﻿# todo
 
-## asteroid spawner
-
-**VITAL**
-- make sure we can tweak the spawn rate, chances
-  and other difficulty settings over time ect.
-
-**NICE-TO-HAVE**
-- instead of the random spawn points, random spawn splines / continuous thing?
+## health / suit
+- oxygen when you hit zero, die
+- suit integrity (correlates to higher oxygen drain)
+- UI views for seeing what current integrity and health is at
 
 ## asteroids
 

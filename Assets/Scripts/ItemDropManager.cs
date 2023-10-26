@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     public class ItemDropManager : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
-namespace DefaultNamespace
+namespace AGL.Asteroids
 {
     [Serializable]
     public class WeightedItem<T>
