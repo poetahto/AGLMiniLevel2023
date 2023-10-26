@@ -12,12 +12,10 @@
 ## asteroids
 
 **VITAL**
-- play audio when they crash
 - integration for dealing damage
-- integration for part spawning
-- warning target for their impact location (small, grow bigger as approach)
 
 **NICE-TO-HAVE**
+- warning target for their impact location (small, grow bigger as approach)
 - juice, like screen shake
 - impact decal / crater (depth stuff?)
 - better particle effects (the more dust-cloudy looking alpha ones)

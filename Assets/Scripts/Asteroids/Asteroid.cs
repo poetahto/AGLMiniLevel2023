@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.Splines;
 
 namespace DefaultNamespace
@@ -7,21 +8,18 @@ namespace DefaultNamespace
     // Some object that can fall from the sky and crash into the ground.
     public class Asteroid : MonoBehaviour
     {
-        // todo: impl
         [SerializeField]
-        private WeightedItem<GameObject> itemDropTable;
+        private WeightedItem<GameObject>[] itemDropTable;
 
-        // todo: impl
+        [SerializeField]
+        private Vector3 itemSpawnPosition;
+
         [SerializeField]
         private AudioSource crashAudio;
 
         // todo: impl
         [SerializeField]
         private float damage = 1;
-
-        // todo: impl
-        [SerializeField]
-        private GameObject warningView;
 
         [SerializeField]
         private ParticleSystem particleEffect;
@@ -36,6 +34,7 @@ namespace DefaultNamespace
         private SplineAnimate splineAnimate;
 
         private Vector3 _previousPosition;
+        private ItemDropManager _itemDropManager;
 
         public SplineAnimate SplineAnimate => splineAnimate;
         public GameObject IntactView => intactView;
@@ -59,6 +58,11 @@ namespace DefaultNamespace
             debrisView.OnLifetimeEnd -= HandleDebrisEnd;
         }
 
+        private void Start()
+        {
+            _itemDropManager = FindAnyObjectByType<ItemDropManager>();
+        }
+
         private void Update()
         {
             _previousPosition = transform.position;
@@ -66,16 +70,28 @@ namespace DefaultNamespace
 
         private void OnTriggerEnter(Collider other)
         {
+            // We keep track of the velocity so the debris can be launched smoothly.
             Vector3 velocity = (transform.position - _previousPosition) / Time.deltaTime;
 
             // We don't want to crash into other asteroids (or asteroid debris)
             if (!other.CompareTag("Asteroid"))
             {
+                // At some point, we might want to move this into a factory for possible pooling.
+                if (itemDropTable.TryGetRandom(out GameObject randomItemPrefab) && _itemDropManager.ShouldDrop(randomItemPrefab))
+                    Instantiate(randomItemPrefab, transform.position + itemSpawnPosition, Quaternion.identity);
+
+                print("explode");
                 particleEffect.Play();
                 splineAnimate.Pause();
                 intactView.SetActive(false);
                 debrisView.StartPlaying(velocity);
+                crashAudio.Play();
             }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.DrawSphere(transform.position + itemSpawnPosition, 1);
         }
     }
 }

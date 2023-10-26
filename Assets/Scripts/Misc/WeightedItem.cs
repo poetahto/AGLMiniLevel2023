@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
@@ -13,6 +14,34 @@ namespace DefaultNamespace
 
     public static class WeightedItemUtil
     {
+        public static float GetProbabilitySum<T>(this IEnumerable<WeightedItem<T>> list)
+        {
+            float result = 0;
+
+            foreach (WeightedItem<T> weightedItem in list)
+                result += weightedItem.probability;
+
+            return result;
+        }
+
+        public static bool ShouldRandomBeNone<T>(this IEnumerable<WeightedItem<T>> list)
+        {
+            float sum = list.GetProbabilitySum();
+            return 1 - sum >= Random.value;
+        }
+
+        public static bool TryGetRandom<T>(this IList<WeightedItem<T>> list, out T result)
+        {
+            if (!list.ShouldRandomBeNone())
+            {
+                result = list.GetRandom();
+                return true;
+            }
+
+            result = default;
+            return false;
+        }
+
         public static T GetRandom<T>(this IList<WeightedItem<T>> list)
         {
             float total = 0;
