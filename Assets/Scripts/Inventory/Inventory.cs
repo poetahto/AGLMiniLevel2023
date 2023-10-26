@@ -62,6 +62,14 @@ namespace InventorySystem
             InventoryItems.Remove(value);
         }
 
+        public void Remove(ItemData _data, int _amount)
+        {
+            for (var i = 0; i < _amount; i++)
+            {
+                Remove(_data);
+            }
+        }
+
         public IEnumerator<InventoryItem> GetEnumerator()
         {
             return InventoryItems.GetEnumerator();

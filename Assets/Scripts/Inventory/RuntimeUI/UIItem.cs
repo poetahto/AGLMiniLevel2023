@@ -13,25 +13,19 @@ namespace InventorySystem
 
         private InventoryItem m_item;
 
-        private string Name
+        public string Name
         {
             set => m_name.text = value;
         }
 
-        private Sprite Icon
+        public Sprite Icon
         {
             set => m_icon.sprite = value;
         }
 
-        private string StackSize
+        public string StackSize
         {
             set => m_stack.text = value;
-        }
-
-        private void Awake()
-        {
-            m_icon = GetComponentInChildren<Image>();
-            m_name = GetComponentInChildren<TextMeshProUGUI>();
         }
 
         public void SetItem(InventoryItem _item)

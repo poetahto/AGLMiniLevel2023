@@ -20,6 +20,12 @@ namespace InventorySystem
             m_data = _data;
             IncreaseStack();
         }
+        
+        public InventoryItem(ItemData _data, uint _stackSize)
+        {
+            m_data = _data;
+            m_stackSize = _stackSize;
+        }
 
         public void IncreaseStack() => m_stackSize++;
 

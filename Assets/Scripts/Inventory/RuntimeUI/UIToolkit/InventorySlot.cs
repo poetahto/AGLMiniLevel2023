@@ -48,7 +48,7 @@ namespace InventorySystem
         
         public void ClearItem()
         {
-            Icon.image = null;
+            Icon.sprite = null;
             Item = null;
             Stack.visible = false;
         }

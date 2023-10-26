@@ -10,7 +10,7 @@ namespace InventorySystem
         [SerializeField] private Transform m_parent;
         [SerializeField] private GameObject m_uiPrefab;
 
-        private void UpdateInventory(Inventory obj)
+        public void UpdateUI(IEnumerable<ItemRequirement> obj)
         {
             foreach (Transform item in m_parent)
             {
@@ -20,7 +20,7 @@ namespace InventorySystem
             ReInitInventoryUI(obj);
         }
 
-        private void ReInitInventoryUI(Inventory inventory)
+        private void ReInitInventoryUI(IEnumerable<ItemRequirement> inventory)
         {
             foreach (var item in inventory)
             {
@@ -28,11 +28,11 @@ namespace InventorySystem
             }
         }
 
-        private void CreateInventoryItemSlot(InventoryItem item)
+        private void CreateInventoryItemSlot(ItemRequirement item)
         {
             var obj = Instantiate(m_uiPrefab, m_parent, false);
             var ui = obj.GetComponent<UIItem>();
-            ui.SetItem(item);
+            ui.SetItem(new InventoryItem(item.Item, (uint)item.Amount));
         }
     }
 }

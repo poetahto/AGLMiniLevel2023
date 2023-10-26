@@ -6,12 +6,13 @@ namespace InventorySystem
     [Serializable]
     public class ItemRequirement
     {
-        [Tooltip("Should the item(s) be removed from the inventory if the requirement is fulfilled.")]
-        [SerializeField] private bool m_shouldRemove;
         [SerializeField] private ItemData m_item;
         [SerializeField] private int m_amount;
 
         public bool FulFilled { get; private set; }
+
+        public ItemData Item => m_item;
+        public int Amount => m_amount;
         
         public bool Evaluate(Inventory _inventory)
         {
@@ -22,21 +23,11 @@ namespace InventorySystem
             if (item.StackSize >= m_amount)
             {
                 FulFilled = true;
-                if (!m_shouldRemove) return true;
-                
-                for (var i = 0; i < m_amount; i++)
-                {
-                    _inventory.Remove(m_item);
-                }
-            }
-            else
-            {
-                FulFilled = false;
-                return false;
+                return true;
             }
 
-            FulFilled = true;
-            return true;
+            FulFilled = false;
+            return false;
         }
     }
 }

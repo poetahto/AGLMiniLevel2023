@@ -37,16 +37,18 @@ public class PlayerInventoryController : MonoBehaviour
             Cursor.visible = !Cursor.visible;
             Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked) ? CursorLockMode.None : CursorLockMode.Locked;
         }
-
-        // var collectables = Physics.OverlapSphere(transform.position, m_detectionRange)
-        //     .Where(c => c.TryGetComponent(out ICollectable o)).ToList();
+        
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
             var collectable = m_selector.GetCollectables().FirstOrDefault();
-            if (collectable == null) return;
-            
-            StartCoroutine(Collect(m_selector.GetCollectableTransform(collectable), collectable, 1f));
+            if (collectable != null)
+            {
+                StartCoroutine(Collect(m_selector.GetCollectableTransform(collectable), collectable, 1f));
+            }
+
+            var interactable = m_selector.GetIntractable().FirstOrDefault();
+            interactable?.Interact(transform);
         }
     }
 
