@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using AGL.Asteroids;
 using InventorySystem;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +17,7 @@ public class Ship : MonoBehaviour, IInteractable, ISelectable
     {
         m_interactionRequirement.OnRequirementFulFilled += RequirementFulfilled;
     }
-    
+
     private void OnDisable()
     {
         m_interactionRequirement.OnRequirementFulFilled += RequirementFulfilled;
@@ -37,9 +38,10 @@ public class Ship : MonoBehaviour, IInteractable, ISelectable
     public void Interact(Transform _user)
     {
         if (!_user.TryGetComponent<PlayerInventoryController>(out var inventoryController)) return;
-        
+
         if (m_interactionRequirement.Evaluate(inventoryController.PlayerInventory))
         {
+            FindAnyObjectByType<GameState>().LoadVictoryScene();
             Debug.Log("Ship repaired!!");
         }
     }
@@ -47,7 +49,7 @@ public class Ship : MonoBehaviour, IInteractable, ISelectable
     public void Select()
     {
         m_progressBar.gameObject.SetActive(true);
-        
+
         if (!m_interactionRequirement.IsCompleted)
             m_inventoryUI.gameObject.SetActive(true);
     }

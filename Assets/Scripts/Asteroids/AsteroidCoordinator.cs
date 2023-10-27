@@ -22,7 +22,16 @@ namespace AGL.Asteroids
     public class AsteroidCoordinator : MonoBehaviour
     {
         [SerializeField]
+        [Tooltip("How far from the player can asteroids strike.")]
+        private float strikingRange = 5.0f;
+
+        [SerializeField]
+        private Transform strikingVisualizer;
+
+        [SerializeField]
         private AsteroidSpawnSettings defaultSettings;
+
+        [SerializeField] private Transform target;
 
         [SerializeField]
         private AsteroidPath pathPrefab;
@@ -36,6 +45,11 @@ namespace AGL.Asteroids
         private ObjectPool<AsteroidPath> _pathPool;
 
         public AsteroidSpawnSettings Settings { get; set; }
+
+        private void OnValidate()
+        {
+            strikingVisualizer.localScale = new Vector3(strikingRange, strikingRange, strikingRange);
+        }
 
         private void Awake()
         {
@@ -59,7 +73,7 @@ namespace AGL.Asteroids
         {
             Settings.spawnRate += difficultyIncreaseRate * Time.deltaTime;
 
-            if (_gameState.TryGetPlayer(out GameObject playerInstance))
+            if (target != null)
             {
                 _timeSinceSpawn += Time.deltaTime;
 
@@ -70,9 +84,11 @@ namespace AGL.Asteroids
                     _launcherIndex = (_launcherIndex + 1) % Settings.launchers.Length;
                     AsteroidPath asteroidPath = _pathPool.Get();
                     asteroidPath.Spline.Clear();
-                    Settings.launchers[_launcherIndex].LaunchAsteroid(asteroidPath, asteroid, playerInstance.transform);
+                    Settings.launchers[_launcherIndex].LaunchAsteroid(asteroidPath, asteroid, target, strikingRange);
                     _timeSinceSpawn = 0;
                 }
+
+                strikingVisualizer.position = target.position;
             }
         }
 

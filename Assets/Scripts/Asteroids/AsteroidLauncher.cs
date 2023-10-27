@@ -16,16 +16,9 @@ namespace AGL.Asteroids
         [Tooltip("How long it takes an asteroid to strike the surface")]
         private float impactTime = 5;
 
-        [SerializeField]
-        [Tooltip("How far from the player can asteroids strike.")]
-        private float strikingRange = 5.0f;
-
-        [SerializeField]
-        private Transform strikingVisualizer;
-
         private GameState _gameState;
 
-        public void LaunchAsteroid(AsteroidPath path, Asteroid asteroid, Transform target)
+        public void LaunchAsteroid(AsteroidPath path, Asteroid asteroid, Transform target, float range)
         {
             // Get a random target (the points around the planet)
             int randomIndex = Random.Range(0, targetPositions.Length);
@@ -35,7 +28,7 @@ namespace AGL.Asteroids
             Spline spline = path.Spline;
             spline.Add(new BezierKnot(transform.position), TangentMode.AutoSmooth, 1);
             spline.Add(new BezierKnot(randomTarget.position), TangentMode.AutoSmooth, 1);
-            path.Initialize(target, strikingRange, impactTime + 1);
+            path.Initialize(target, range, impactTime + 1);
 
             // Create the asteroid itself, and assign it to follow the path
             asteroid.SplineAnimate.Container = path.Container;
@@ -43,28 +36,9 @@ namespace AGL.Asteroids
             asteroid.SplineAnimate.Restart(true);
         }
 
-        private void OnValidate()
-        {
-            strikingVisualizer.localScale = new Vector3(strikingRange, strikingRange, strikingRange);
-        }
-
         private void Start()
         {
             _gameState = FindAnyObjectByType<GameState>();
-        }
-
-        private void Update()
-        {
-            bool playerExists = _gameState.TryGetPlayer(out GameObject playerInstance);
-
-            if (playerExists)
-            {
-                // Update the target visualizer transform
-                strikingVisualizer.transform.position = playerInstance.transform.position;
-                strikingVisualizer.forward = playerInstance.transform.up * -1;
-            }
-
-            strikingVisualizer.gameObject.SetActive(playerExists);
         }
     }
 }

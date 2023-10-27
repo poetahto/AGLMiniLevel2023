@@ -5,6 +5,9 @@ namespace AGL.Asteroids
 {
     public class GameState : MonoBehaviour
     {
+        [SerializeField] private string victorySceneName;
+        [SerializeField] private GameObject victoryUI;
+
         [SerializeField]
         private GameObject player;
 
@@ -16,8 +19,8 @@ namespace AGL.Asteroids
 
         public void LoadVictoryScene()
         {
-            // todo: implement
-            print("you won!");
+            Time.timeScale = 0;
+            victoryUI.SetActive(true);
         }
 
         public void RestartGame()
