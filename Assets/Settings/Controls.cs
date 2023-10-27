@@ -197,6 +197,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""44fc05e7-ddbc-4572-a4d6-1e46f19ebe31"",
+                    ""path"": ""<HID::Nintendo Wireless Gamepad>/stick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""fdfdac7a-60dc-453f-ba68-8c7ec2e34322"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
