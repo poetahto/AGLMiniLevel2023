@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public double moveSpeed;
-    public RigidBody rb;
-    public double jumpForce;
-    
-    void Start ()
+    public float moveSpeed;
+    public Rigidbody rb;
+    public float jumpForce;
+
+    void Start()
     {
-        rb = GetComponent<RigidBody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
         // left, right, up, down movements(x and z axis)
-        rb.velocity = new Vector3(Input.getAxis("Horizontal") * moveSpeed, rb.velocity.y,
-            Input.getAxis("Vertical") * moveSpeed);
+        rb.velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y,
+            Input.GetAxis("Vertical") * moveSpeed);
         // jump movement
         if (Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-        }    
+        }
     }
 }
