@@ -16,6 +16,7 @@ namespace InventorySystem
         private static InventorySlot m_origin;
 
         [SerializeField] private Inventory m_inventory;
+        [SerializeField] private Transform dropTransform;
 
         private readonly List<InventorySlot> InventorySlots = new();
 
@@ -82,8 +83,7 @@ namespace InventorySystem
             }
             else
             {
-                Instantiate(m_origin.Item.Data.Prefab, transform.position + transform.forward * 2f,
-                    Quaternion.identity);
+                Instantiate(m_origin.Item.Data.Prefab, dropTransform.position, Quaternion.identity);
 
                 m_inventory.Remove(m_origin.Item.Data);
 

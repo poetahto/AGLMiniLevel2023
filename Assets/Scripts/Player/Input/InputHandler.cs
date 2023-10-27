@@ -25,7 +25,7 @@ using UnityEngine.InputSystem;
         {
             IsDisabled = false;
             IsPaused = false;
-            
+
             if (m_gameInput == null)
             {
                 m_gameInput = new Controls();
@@ -34,7 +34,7 @@ using UnityEngine.InputSystem;
 
             EnableInput();
         }
-        
+
         private void OnDisable()
         {
             DisableInput();
@@ -48,7 +48,7 @@ using UnityEngine.InputSystem;
         public void OnMove(InputAction.CallbackContext context)
         {
             if(IsPaused) return;
-            
+
             OnMoveEvent?.Invoke(context.ReadValue<Vector2>());
         }
 
@@ -65,14 +65,14 @@ using UnityEngine.InputSystem;
         public void OnLookYaw(InputAction.CallbackContext context)
         {
             if (IsPaused) return;
-            
+
             OnLookYawEvent?.Invoke(context.ReadValue<float>());
         }
 
         public void OnLookPitch(InputAction.CallbackContext context)
         {
             if (IsPaused) return;
-            
+
             OnLookPitchEvent?.Invoke(context.ReadValue<float>());
         }
 

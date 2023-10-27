@@ -1,7 +1,6 @@
 using System;
 using Cinemachine;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace AGL.Player
 {
@@ -25,28 +24,13 @@ namespace AGL.Player
 
         [SerializeField] private InputHandler m_input;
 
-        [Tooltip("The reference to the Input Action that will control the camera yaw")]
-        [SerializeField] private InputActionReference m_yawInputAction;
-
-        [Tooltip("The reference to the Input Action that will control the camera yaw")]
-        [SerializeField] private InputActionReference m_pitchInputAction;
-
         [Header("Preferences")]
         [Tooltip("The time it will take for the smoothing function to reach the target value")]
         [SerializeField] private float m_rotationSmoothTime;
         [Tooltip("The mouse sensitivity divided by axis")]
         [SerializeField] private Sensitivity m_sensitivity;
 
-        /// <summary>
-        /// Returns the normalized forward direction of the camera without regard for its local rotation
-        /// </summary>
-        public Vector3 LookDirection => (targetLookPosition - transform.position).normalized;
-
         private Vector3 targetLookPosition => new(m_target.position.x, transform.position.y, m_target.position.z);
-
-        private bool isValidInputAction =>
-            m_yawInputAction.action.expectedControlType.Contains("Axis") &&
-            m_pitchInputAction.action.expectedControlType.Contains("Axis");
 
         private CinemachineVirtualCameraBase m_cinemachine;
         private Transform m_target;
@@ -57,28 +41,13 @@ namespace AGL.Player
         private float m_smoothYaw;
         private float m_yawSmoothVelocity;
 
-        private void OnValidate()
-        {
-            if (m_yawInputAction == null || m_pitchInputAction == null) return;
-
-            if (!isValidInputAction)
-            {
-                Debug.LogError($"The InputAction must have a controlType of 'Axis'");
-            }
-        }
-
         private void Awake()
         {
-            m_yawInputAction.action.Enable();
-            m_pitchInputAction.action.Enable();
-
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
             m_cinemachine = GetComponent<CinemachineVirtualCameraBase>();
             m_target = m_cinemachine.LookAt;
-
-            Debug.Assert(isValidInputAction, "The InputAction must have a controlType of 'Axis'");
         }
 
         private void Update()
@@ -89,9 +58,6 @@ namespace AGL.Player
         public float GetAxisValue(int axis)
         {
             if (!enabled) return 0.0f;
-            
-            float pitchDelta = m_pitchInputAction.action.ReadValue<float>();
-            float yawDelta = m_yawInputAction.action.ReadValue<float>();
 
             return axis switch
             {

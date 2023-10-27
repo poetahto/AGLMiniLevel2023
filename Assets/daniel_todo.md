@@ -22,3 +22,7 @@
 - general asteroid
 - space debris (drops items)
 - flaming variant (catches AOE on fire)
+- engine collectable
+- thrusters
+- hull plate
+- satellite dish
