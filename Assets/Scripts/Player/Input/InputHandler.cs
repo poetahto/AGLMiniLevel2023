@@ -14,6 +14,8 @@ using UnityEngine.InputSystem;
         public event Action<float> OnLookPitchEvent;
         public event Action OnJumpEvent;
         public event Action OnDiveEvent;
+        public event Action OnInventoryEvent;
+        public event Action OnInteractEvent;
 
         public float LookYaw => IsPaused ? 0f : m_gameInput.Default.LookYaw.ReadValue<float>();
         public float LookPitch => IsPaused ? 0f : m_gameInput.Default.LookPitch.ReadValue<float>();
@@ -74,6 +76,18 @@ using UnityEngine.InputSystem;
             if (IsPaused) return;
 
             OnLookPitchEvent?.Invoke(context.ReadValue<float>());
+        }
+
+        public void OnInteract(InputAction.CallbackContext context)
+        {
+            if (IsPaused) return;
+
+            OnInteractEvent?.Invoke();
+        }
+
+        public void OnInventory(InputAction.CallbackContext context)
+        {
+            OnInventoryEvent?.Invoke();
         }
 
         public void OnJump(InputAction.CallbackContext context)

@@ -31,6 +31,7 @@ namespace AGL.Asteroids.Editor
 
                     // Set the physics to the correct layer
                     parent.tag = "Asteroid";
+                    parent.layer = LayerMask.NameToLayer("Detail");
 
                     EditorUtility.SetDirty(gameObject);
                 }

@@ -7,9 +7,9 @@ namespace AGL.Player
         [SerializeField]
         private Animator targetAnimator;
 
-        public void SetMovementDirection(Vector2 direction)
+        public void SetMovementSpeed(float speed)
         {
-            print($"moving {direction}");
+            targetAnimator.SetFloat("Speed", speed);
         }
 
         public void SetIsGrounded(bool isGrounded)

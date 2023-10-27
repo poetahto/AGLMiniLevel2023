@@ -71,6 +71,24 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""22e6e548-311d-4a82-87b5-7261cf9c1137"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Inventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""7a8d0b1e-33dd-45e4-aac6-924b59505131"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -197,6 +215,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""44fc05e7-ddbc-4572-a4d6-1e46f19ebe31"",
+                    ""path"": ""<HID::Nintendo Wireless Gamepad>/stick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""fdfdac7a-60dc-453f-ba68-8c7ec2e34322"",
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
@@ -222,7 +251,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""id"": ""c190c47d-8e86-49e2-b4b0-1ad799531dbf"",
                     ""path"": ""<Mouse>/delta/x"",
                     ""interactions"": """",
-                    ""processors"": ""Invert"",
+                    ""processors"": ""Invert,Scale(factor=0.1)"",
                     ""groups"": """",
                     ""action"": ""LookYaw"",
                     ""isComposite"": false,
@@ -244,9 +273,64 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""id"": ""57c1ec86-f4b8-4ad1-af8d-1ed2fa08da13"",
                     ""path"": ""<Mouse>/delta/y"",
                     ""interactions"": """",
-                    ""processors"": ""Invert"",
+                    ""processors"": ""Invert,Scale(factor=0.1)"",
                     ""groups"": """",
                     ""action"": ""LookPitch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ee819678-f2ca-442c-bf51-fe31ba1f8e11"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""88882988-a09a-4253-b3b6-792d9158d374"",
+                    ""path"": ""<HID::Nintendo Wireless Gamepad>/trigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6e3c7cbc-690e-4e97-9b91-81c3d5013daa"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Inventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8d54eada-ad80-417f-8770-d1eba640a085"",
+                    ""path"": ""<HID::Nintendo Wireless Gamepad>/button8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Inventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1f9b272d-f6a1-4e56-a5e9-2dca5b45042c"",
+                    ""path"": ""<HID::Nintendo Wireless Gamepad>/button7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Inventory"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -262,6 +346,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Default_Dive = m_Default.FindAction("Dive", throwIfNotFound: true);
         m_Default_LookYaw = m_Default.FindAction("LookYaw", throwIfNotFound: true);
         m_Default_LookPitch = m_Default.FindAction("LookPitch", throwIfNotFound: true);
+        m_Default_Interact = m_Default.FindAction("Interact", throwIfNotFound: true);
+        m_Default_Inventory = m_Default.FindAction("Inventory", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -328,6 +414,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Default_Dive;
     private readonly InputAction m_Default_LookYaw;
     private readonly InputAction m_Default_LookPitch;
+    private readonly InputAction m_Default_Interact;
+    private readonly InputAction m_Default_Inventory;
     public struct DefaultActions
     {
         private @Controls m_Wrapper;
@@ -337,6 +425,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Dive => m_Wrapper.m_Default_Dive;
         public InputAction @LookYaw => m_Wrapper.m_Default_LookYaw;
         public InputAction @LookPitch => m_Wrapper.m_Default_LookPitch;
+        public InputAction @Interact => m_Wrapper.m_Default_Interact;
+        public InputAction @Inventory => m_Wrapper.m_Default_Inventory;
         public InputActionMap Get() { return m_Wrapper.m_Default; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -361,6 +451,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @LookPitch.started += instance.OnLookPitch;
             @LookPitch.performed += instance.OnLookPitch;
             @LookPitch.canceled += instance.OnLookPitch;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
+            @Inventory.started += instance.OnInventory;
+            @Inventory.performed += instance.OnInventory;
+            @Inventory.canceled += instance.OnInventory;
         }
 
         private void UnregisterCallbacks(IDefaultActions instance)
@@ -380,6 +476,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @LookPitch.started -= instance.OnLookPitch;
             @LookPitch.performed -= instance.OnLookPitch;
             @LookPitch.canceled -= instance.OnLookPitch;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
+            @Inventory.started -= instance.OnInventory;
+            @Inventory.performed -= instance.OnInventory;
+            @Inventory.canceled -= instance.OnInventory;
         }
 
         public void RemoveCallbacks(IDefaultActions instance)
@@ -404,5 +506,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnDive(InputAction.CallbackContext context);
         void OnLookYaw(InputAction.CallbackContext context);
         void OnLookPitch(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
+        void OnInventory(InputAction.CallbackContext context);
     }
 }

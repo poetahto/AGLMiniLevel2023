@@ -29,32 +29,30 @@ public class PlayerInventoryController : MonoBehaviour
         m_ui = GetComponentInChildren<InventoryUIController>();
         m_selector = GetComponent<Selector>();
         m_animatingCollectables = new HashSet<ICollectable>();
+        m_actionAsset.OnInventoryEvent += HandleInventoryEvent;
+        m_actionAsset.OnInteractEvent += HandleInteractEvent;
     }
 
-    private void Update()
+    private void HandleInteractEvent()
     {
-        if (Keyboard.current.tabKey.wasPressedThisFrame)
+        ICollectable collectable = m_selector.GetCollectables()
+            .FirstOrDefault(collectable => !m_animatingCollectables.Contains(collectable));
+
+        if (collectable != null)
         {
-            m_ui.Display(!m_ui.IsDisplaying);
-            m_actionAsset.IsPaused = !m_actionAsset.IsPaused;
-            Cursor.visible = !Cursor.visible;
-            Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked) ? CursorLockMode.None : CursorLockMode.Locked;
+            StartCoroutine(Collect(m_selector.GetCollectableTransform(collectable), collectable, 1f));
         }
 
+        var interactable = m_selector.GetIntractable().FirstOrDefault();
+        interactable?.Interact(transform);
+    }
 
-        if (Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            ICollectable collectable = m_selector.GetCollectables()
-                .FirstOrDefault(collectable => !m_animatingCollectables.Contains(collectable));
-
-            if (collectable != null)
-            {
-                StartCoroutine(Collect(m_selector.GetCollectableTransform(collectable), collectable, 1f));
-            }
-
-            var interactable = m_selector.GetIntractable().FirstOrDefault();
-            interactable?.Interact(transform);
-        }
+    private void HandleInventoryEvent()
+    {
+        m_ui.Display(!m_ui.IsDisplaying);
+        m_actionAsset.IsPaused = !m_actionAsset.IsPaused;
+        Cursor.visible = !Cursor.visible;
+        Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked) ? CursorLockMode.None : CursorLockMode.Locked;
     }
 
     private IEnumerator Collect(Transform t, ICollectable c, float time)
