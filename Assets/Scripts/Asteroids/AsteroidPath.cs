@@ -27,6 +27,9 @@ namespace AGL.Asteroids
                 strikingRange / 2
             );
 
+            if (spawnPos.point == Vector3.zero)
+                spawnPos.point = targetTransform.position;
+
             float angleVariance = 80f;
             float randomXAngle = Random.Range(-angleVariance, angleVariance);
             float randomYAngle = Random.Range(-angleVariance, angleVariance);

@@ -8,6 +8,8 @@ namespace AGL.Asteroids.Editor
         [MenuItem("GameObject/Convert To Asteroid Debris")]
         public static void ConvertToAsteroidDebris()
         {
+            Transform trueParent = Selection.gameObjects[0].transform.parent;
+
             foreach (GameObject gameObject in Selection.gameObjects)
             {
                 if (gameObject.TryGetComponent(out MeshFilter mesh))
@@ -15,7 +17,7 @@ namespace AGL.Asteroids.Editor
                     // Create a new parent
                     var parent = new GameObject("Parent");
                     Undo.RegisterCreatedObjectUndo(parent, "Create Parent");
-                    parent.transform.SetParent(gameObject.transform.parent);
+                    parent.transform.SetParent(trueParent);
                     parent.transform.SetPositionAndRotation(gameObject.transform.position, gameObject.transform.rotation);
                     parent.transform.localScale = gameObject.transform.localScale;
                     gameObject.transform.SetParent(parent.transform, true);

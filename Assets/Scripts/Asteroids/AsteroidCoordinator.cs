@@ -27,6 +27,9 @@ namespace AGL.Asteroids
         [SerializeField]
         private AsteroidPath pathPrefab;
 
+        [SerializeField]
+        private float difficultyIncreaseRate = 5;
+
         private int _launcherIndex;
         private float _timeSinceSpawn;
         private GameState _gameState;
@@ -54,6 +57,8 @@ namespace AGL.Asteroids
 
         private void Update()
         {
+            Settings.spawnRate += difficultyIncreaseRate * Time.deltaTime;
+
             if (_gameState.TryGetPlayer(out GameObject playerInstance))
             {
                 _timeSinceSpawn += Time.deltaTime;

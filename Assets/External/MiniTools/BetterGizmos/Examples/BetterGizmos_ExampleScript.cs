@@ -4,15 +4,15 @@
 /// If one or multiple BetterGizmos functions are called outside of a UNITY_EDITOR define, you may get errors while trying to build.
 /////
 
+#if UNITY_EDITOR
+
 namespace MiniTools.BetterGizmos.Example
 {
     using UnityEngine;
     using MiniTools.BetterGizmos; // Use this namespace to call BetterGizmos functions easier
 
-#if UNITY_EDITOR
     using UnityEditor;
     [InitializeOnLoad]
-#endif
 
     public class BetterGizmos_ExampleScript : MonoBehaviour
     {
@@ -419,3 +419,4 @@ namespace MiniTools.BetterGizmos.Example
 #endif
     }
 }
+#endif
