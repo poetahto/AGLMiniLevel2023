@@ -404,12 +404,12 @@ GameObject:
   - component: {fileID: 5076415593678475843}
   - component: {fileID: 111595797093866071}
   - component: {fileID: 1905432187224398589}
-  - component: {fileID: 8451855620072513396}
   - component: {fileID: 435981940325074317}
   - component: {fileID: 7225740901880527570}
   - component: {fileID: 7939527908949413236}
   - component: {fileID: 6053126652504325521}
   - component: {fileID: 1022344065552055376}
+  - component: {fileID: 385684093889540398}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -506,27 +506,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetAnimator: {fileID: 7767735367094046726}
---- !u!65 &8451855620072513396
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898716764206173949}
-  m_Material: {fileID: 13400000, guid: 35559863ff4da364b93f23d52eb8a93c, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 2.2527452, z: 1}
-  m_Center: {x: 0, y: 1.1216438, z: 0}
 --- !u!114 &435981940325074317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,6 +598,29 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!136 &385684093889540398
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898716764206173949}
+  m_Material: {fileID: 13400000, guid: 35559863ff4da364b93f23d52eb8a93c, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2.288022
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.1588426, z: 0}
 --- !u!1 &1919021672561829169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,17 +1465,17 @@ PrefabInstance:
     - target: {fileID: 149799590957119835, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.12218325
+      value: 0.12218327
       objectReference: {fileID: 0}
     - target: {fileID: 149799590957119835, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017077465
+      value: 0.000000017077465
       objectReference: {fileID: 0}
     - target: {fileID: 149799590957119835, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000021023316
+      value: -0.0000000021023319
       objectReference: {fileID: 0}
     - target: {fileID: 557961786857531756, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
@@ -1734,7 +1736,7 @@ PrefabInstance:
     - target: {fileID: 8898048682270015414, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 8898048682270015414, guid: 8a0d4e2d1c1206e42a41722b4f09cf89,
         type: 3}

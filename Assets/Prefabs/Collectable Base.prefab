@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3598594657934181780}
   - component: {fileID: 5114276926287049917}
   - component: {fileID: 2711684603415396930}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 49d1c267414b51c468dc15fb1c332661, type: 3}
-  m_Color: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 0.7176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.57254905}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -109,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3290349235896997463}
   - component: {fileID: 5664944264580328523}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 1021644890073418229}
   - component: {fileID: 7120929564213429394}
   - component: {fileID: 6023868382644440207}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collectable Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4079011820804922788}
   - component: {fileID: 3374662708182253893}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Billboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}

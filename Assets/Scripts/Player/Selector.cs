@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using AGL.Misc;
 using InventorySystem;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public class Selector : MonoBehaviour
     private Transform m_transform;
 
     private List<Collider> m_selectables = new();
-    
+
     private void Awake()
     {
         m_transform = transform;
@@ -21,12 +22,12 @@ public class Selector : MonoBehaviour
     private void Update()
     {
         m_selectables = Physics.OverlapSphere(m_transform.position, m_detectionRange * 1.5f)
-            .Where(c => c.TryGetComponent(out ISelectable o)).ToList();
+            .Where(c => c.TryGetComponentOnRoot(out ISelectable o)).ToList();
 
-        foreach (var selectable in m_selectables)
+        foreach (Collider selectable in m_selectables)
         {
-            var s = selectable.GetComponent<ISelectable>();
-            if (Vector3.Distance(m_transform.position, selectable.transform.position) <= m_detectionRange)
+            selectable.TryGetComponentOnRoot<ISelectable>(out ISelectable s);
+            if (Vector3.Distance(m_transform.position, selectable.GetRoot().transform.position) <= m_detectionRange)
             {
                 s.Select();
             }
@@ -42,7 +43,7 @@ public class Selector : MonoBehaviour
         foreach (var s in m_selectables)
         {
             if (!s.TryGetComponent<ICollectable>(out var c)) continue;
-            
+
             if (c == collectable)
                 return s.transform;
         }
@@ -50,28 +51,28 @@ public class Selector : MonoBehaviour
         return null;
     }
 
-    public IEnumerable<ICollectable> GetCollectables() 
+    public IEnumerable<ICollectable> GetCollectables()
     {
         var list = new List<ICollectable>();
         foreach (var selectable in m_selectables)
         {
-            if (selectable.TryGetComponent(out ICollectable c)) 
+            if (selectable.TryGetComponent(out ICollectable c))
                 list.Add(c);
         }
         return list;
     }
-    
-    public IEnumerable<IInteractable> GetIntractable() 
+
+    public IEnumerable<IInteractable> GetIntractable()
     {
         var list = new List<IInteractable>();
         foreach (var selectable in m_selectables)
         {
-            if (selectable.TryGetComponent(out IInteractable c)) 
+            if (selectable.TryGetComponentOnRoot(out IInteractable c))
                 list.Add(c);
         }
         return list;
     }
-    
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;

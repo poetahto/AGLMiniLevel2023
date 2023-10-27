@@ -3478,6 +3478,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[0].item
+      value: 
+      objectReference: {fileID: 7598228228863276065, guid: cecb427d9d8f4034f8d9f799cc92d55a,
+        type: 3}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[0].probability
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5254177641109736194, guid: fbf85f0b8d73b9e4b847065c89b93622,
         type: 3}
       propertyPath: m_LocalPosition.x

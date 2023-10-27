@@ -47,6 +47,7 @@ namespace AGL.Player
             targetVelocity = cameraTransform.rotation * targetVelocity;
             Vector3 velocity = targetRigidbody.velocity;
             float originalY = velocity.y;
+            velocity.y = 0;
 
             if (_targetDirection != Vector2.zero)
             {
