@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 namespace InventorySystem
@@ -16,7 +17,8 @@ namespace InventorySystem
         private static InventorySlot m_origin;
 
         [SerializeField] private Inventory m_inventory;
-        [SerializeField] private Transform dropTransform;
+        [SerializeField] private Transform m_dropTransform;
+        [SerializeField] private AudioSource m_dropSound;
 
         private readonly List<InventorySlot> InventorySlots = new();
 
@@ -83,7 +85,8 @@ namespace InventorySystem
             }
             else
             {
-                Instantiate(m_origin.Item.Data.Prefab, dropTransform.position, Quaternion.identity);
+                Instantiate(m_origin.Item.Data.Prefab, m_dropTransform.position, Quaternion.identity);
+                m_dropSound.Play();
 
                 m_inventory.Remove(m_origin.Item.Data);
 

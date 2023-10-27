@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using AGL.Player;
 using InventorySystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,6 +14,9 @@ public class PlayerInventoryController : MonoBehaviour
     [Header("References")]
     [SerializeField] private InputHandler m_actionAsset;
     [SerializeField] private Inventory m_inventory;
+    [SerializeField] private AudioSource m_collectSound;
+    [SerializeField] private AudioSource m_collectStartSound;
+    [SerializeField] private PlayerAnimator m_playerAnimator;
 
     public Inventory PlayerInventory => m_inventory;
 
@@ -55,7 +59,9 @@ public class PlayerInventoryController : MonoBehaviour
 
     private IEnumerator Collect(Transform t, ICollectable c, float time)
     {
+        m_playerAnimator.PlayUse();
         m_animatingCollectables.Add(c);
+        m_collectStartSound.Play();
         var scale = t.localScale;
         var position = t.position;
 
@@ -70,6 +76,7 @@ public class PlayerInventoryController : MonoBehaviour
 
         c.Collect(m_inventory);
         m_animatingCollectables.Remove(c);
+        m_collectSound.Play();
 
         yield return null;
     }
