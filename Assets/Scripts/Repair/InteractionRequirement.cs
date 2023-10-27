@@ -8,7 +8,7 @@ using UnityEngine;
 public class InteractionRequirement : MonoBehaviour
 {
     public event Action OnRequirementFulFilled;
-    
+
     [Tooltip("Should the item(s) be removed from the inventory if the requirement is fulfilled.")]
     [SerializeField] private bool m_shouldRemove;
     [SerializeField] private ItemRequirement[] m_requirements;
@@ -19,9 +19,11 @@ public class InteractionRequirement : MonoBehaviour
     public bool IsCompleted => m_requirements.All(r => r.FulFilled);
 
     public IEnumerable<ItemRequirement> Requirements => m_requirements;
-    
+
     public bool Evaluate(Inventory _inventory)
     {
+        bool result = true;
+
         foreach (var requirement in m_requirements)
         {
             if (requirement.FulFilled) continue;
@@ -32,15 +34,15 @@ public class InteractionRequirement : MonoBehaviour
                     _inventory.Remove(requirement.Item, requirement.Amount);
 
                 CompletedRequirements++;
-                
+
                 OnRequirementFulFilled?.Invoke();
             }
             else
             {
-                return false;
+                result = false;
             }
         }
-        
-        return true;
+
+        return result;
     }
 }

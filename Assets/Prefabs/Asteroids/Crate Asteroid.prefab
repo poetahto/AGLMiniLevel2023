@@ -3481,18 +3481,62 @@ PrefabInstance:
     - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
         type: 3}
       propertyPath: itemDropTable.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
         type: 3}
       propertyPath: itemDropTable.Array.data[0].item
+      value: 
+      objectReference: {fileID: 2088151019557537812, guid: b27705399f4080246a5d0cbde90ffd30,
+        type: 3}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[1].item
+      value: 
+      objectReference: {fileID: 5181712515632930489, guid: d38657821ae32dd469d459aea837d15e,
+        type: 3}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[2].item
+      value: 
+      objectReference: {fileID: 2113970552180001889, guid: efdec89da4aa52d479f48192a3a5d525,
+        type: 3}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[3].item
+      value: 
+      objectReference: {fileID: 5496470591672263194, guid: 37c05a9cd487f314e9815f4c09e66fae,
+        type: 3}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[4].item
       value: 
       objectReference: {fileID: 7598228228863276065, guid: cecb427d9d8f4034f8d9f799cc92d55a,
         type: 3}
     - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
         type: 3}
       propertyPath: itemDropTable.Array.data[0].probability
-      value: 0.1
+      value: 0.0625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[1].probability
+      value: 0.0625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[2].probability
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[3].probability
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249033208242266278, guid: fbf85f0b8d73b9e4b847065c89b93622,
+        type: 3}
+      propertyPath: itemDropTable.Array.data[4].probability
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5254177641109736194, guid: fbf85f0b8d73b9e4b847065c89b93622,
         type: 3}

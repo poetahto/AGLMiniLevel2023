@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a121c7de31173948bce93dc81234bba, type: 3}
+  m_Name: engine_data
+  m_EditorClassIdentifier: 
+  Name: Engine
+  Description: The powerhouse of the ship.
+  Icon: {fileID: 21300000, guid: c6bf804ba946dd94eb19d115eec199ba, type: 3}
+  Prefab: {fileID: 2088151019557537812, guid: b27705399f4080246a5d0cbde90ffd30, type: 3}
