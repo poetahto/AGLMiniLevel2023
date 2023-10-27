@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Inventory/Editor/Inventory/InventoryEditorWindowStyles.uss?fileID=7433441132597879392&amp;guid=1d8d9f0086dcecf4a8703ddc34259e67&amp;type=3#InventoryEditorWindowStyles" />
+    <ui:VisualElement name="container" class="container">
+        <ui:VisualElement name="controls" class="controls" style="flex-direction: row; align-self: flex-start; align-items: flex-end; max-height: 128px;">
+            <ui:VisualElement name="icon-preview-container" class="icon-prev-container">
+                <ui:Image name="icon-preview" class="icon-prev" />
+            </ui:VisualElement>
+            <ui:VisualElement name="control-container" class="control-container">
+                <ui:VisualElement name="info-container" class="info-container" />
+                <ui:VisualElement name="button-container" class="button-container">
+                    <ui:Button text="+" display-tooltip-when-elided="true" name="plus" class="plus" />
+                    <ui:Button text="-" display-tooltip-when-elided="true" name="minus" class="minus" />
+                    <ui:Button text="Delete" display-tooltip-when-elided="true" name="delete-button" class="delete-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="inventory-slots" class="inventory-slots">
+            <ui:ScrollView name="slot-scroll" class="slot-scroll" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
