@@ -14,11 +14,11 @@ namespace InventorySystem
         private static VisualElement m_ghostIcon;
         private static bool m_isDragging;
         private static InventorySlot m_origin;
-        
+
         [SerializeField] private Inventory m_inventory;
-        
+
         private readonly List<InventorySlot> InventorySlots = new();
-        
+
         private VisualElement m_root;
         private VisualElement m_slotContainer;
 
@@ -32,19 +32,19 @@ namespace InventorySystem
             m_ghostIcon = m_root.Q<VisualElement>("GhostIcon");
             m_ghostIcon.RegisterCallback<PointerMoveEvent>(OnPointerMove);
             m_ghostIcon.RegisterCallback<PointerUpEvent>(OnPointerUp);
-            
+
             for (int i = 0; i < m_inventory.MaxCapacity; i++)
             {
                 var newSlot = new InventorySlot();
                 m_slotContainer.Add(newSlot);
                 InventorySlots.Add(newSlot);
             }
-            
+
             InitInventoryUI();
 
             Display(false);
         }
-        
+
         private void OnEnable()
         {
             m_inventory.OnInventoryChanged += InventoryChanged;
@@ -61,7 +61,7 @@ namespace InventorySystem
 
             var slots = InventorySlots.Where(s => s.worldBound.Overlaps(m_ghostIcon.worldBound));
             var inventorySlots = slots as InventorySlot[] ?? slots.ToArray();
-            
+
             if (inventorySlots.Length != 0)
             {
                 var slot = inventorySlots.OrderBy(s => Vector2.Distance(s.worldBound.position, m_ghostIcon.worldBound.position))
@@ -76,7 +76,7 @@ namespace InventorySystem
                         m_origin = null;
                     }
                 }
-                
+
                 m_origin?.SetItem(m_origin.Item);
                 m_isDragging = false;
             }
@@ -84,7 +84,7 @@ namespace InventorySystem
             {
                 Instantiate(m_origin.Item.Data.Prefab, transform.position + transform.forward * 2f,
                     Quaternion.identity);
-                
+
                 m_inventory.Remove(m_origin.Item.Data);
 
                 if (m_origin.Item != null)
@@ -96,12 +96,12 @@ namespace InventorySystem
                     m_origin.ClearItem();
                     m_origin = null;
                 }
-                
-                
+
+
                 m_isDragging = false;
             }
 
-            
+
             m_ghostIcon.style.visibility = Visibility.Hidden;
         }
 
@@ -111,7 +111,7 @@ namespace InventorySystem
             {
                 return;
             }
-            
+
             m_ghostIcon.style.top = evt.position.y - m_ghostIcon.layout.height / 2;
             m_ghostIcon.style.left = evt.position.x - m_ghostIcon.layout.width / 2;
         }
@@ -172,7 +172,7 @@ namespace InventorySystem
             m_ghostIcon.style.top = _position.y - m_ghostIcon.layout.height / 2;
             m_ghostIcon.style.left = _position.x - m_ghostIcon.layout.width / 2;
 
-            m_ghostIcon.style.backgroundImage = _origin.Item.Data.Icon.texture;
+            m_ghostIcon.style.backgroundImage = Background.FromSprite(_origin.Item.Data.Icon);
 
             m_ghostIcon.style.visibility = Visibility.Visible;
         }
